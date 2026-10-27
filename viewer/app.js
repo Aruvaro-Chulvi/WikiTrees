@@ -92,7 +92,6 @@ const WTD_KY = 18, WTD_SIB_GAP = 16, WTD_BAR_W = 12, WTD_PAD = 36;
 const WTD_LABEL_ROOM = 190;   // px de pantalla para las etiquetas de la última columna
 const WTD_LABEL_MIN_H = 15;   // una etiqueta solo se pinta si su barra mide al menos esto en pantalla
 const WTD_PANEL_W = 380;      // ancho de la ficha del nodo
-const WTD_BIG_TREE = 800;     // a partir de estos nodos el árbol se abre plegado (WTD_OPEN_DEPTH niveles)
 const WTD_MM_MAX = 1500;      // con más nodos visibles, el minimapa solo dibuja los primeros niveles
 const WTD_MM_DEPTH = 3;
 const WTD_MIN_S = 0.0005;     // escala mínima absoluta
@@ -283,9 +282,7 @@ function _wtdPrepTree(root){
     n._ai = all.length; all.push(n);
     (n._kids || []).forEach((k, i) => walk(k, depth + 1, n,
       depth === 0 ? WTD.PALETTE[i % WTD.PALETTE.length] : color, depth === 0 ? i : branch));
-  })(root, 0, null, WTD.PALETTE[0], -1);
-  // Árbol grande: desplegado del todo serían miles de barras; se abre plegado
-  if (all.length > WTD_BIG_TREE) for (const n of all) n._open = n._open && n._depth < WTD_OPEN_DEPTH;
+  })(root, 0, null, WTD.PALETTE[0], -1);   // todo desplegado: se ve la forma del árbol entero
   WTD._all = all;
 }
 
