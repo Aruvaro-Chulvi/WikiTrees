@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use WikiTrees, please credit it as below."
+type: dataset
+title: "WikiTrees"
+abstract: >-
+  Wikipedia topics as interactive trees in 10 languages (en, es, fr, pt, it, de, ru, zh, hi, ar):
+  26 trees and more than 35,000 nodes, each linked to its Wikipedia article. A project of Offlined.
+authors:
+  - given-names: "Álvaro"
+    family-names: "C. Chulvi"
+    affiliation: "Offlined"
+    website: "https://www.offlined.org"
+repository-code: "https://github.com/Aruvaro-Chulvi/WikiTrees"
+url: "https://www.offlined.org"
+license: CC-BY-NC-SA-4.0
+version: "1.0.0"
+date-released: "2026-10-27"
+keywords:
+  - Wikipedia
+  - Wikidata
+  - taxonomy
+  - knowledge tree
+  - education
+  - Offlined

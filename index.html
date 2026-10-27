@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WikiTrees</title>
+<meta name="description" content="WikiTrees by Álvaro C. Chulvi, a project of Offlined: Wikipedia topics as interactive diagrams in 10 languages.">
+<meta name="author" content="Álvaro C. Chulvi">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B3%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="viewer/style.css">
+</head>
+<body>
+<header class="app-header">
+  <a class="brand" href="#" id="brandLink">
+    <svg class="lucide-icon" aria-hidden="true"><use href="#lucide-tree-pine"></use></svg>
+    <span class="brand-name">WikiTrees</span>
+  </a>
+  <span class="brand-by" id="brandBy"></span>
+  <span class="spacer"></span>
+  <label class="lang-pick">
+    <svg class="lucide-icon" aria-hidden="true"><use href="#lucide-globe"></use></svg>
+    <select id="langSelect" aria-label="Language"></select>
+  </label>
+  <button id="themeBtn" class="wtd-tb-btn wtd-tb-icon" type="button" aria-label="Theme">
+    <svg class="lucide-icon i-sun" aria-hidden="true"><use href="#lucide-sun"></use></svg>
+    <svg class="lucide-icon i-moon" aria-hidden="true"><use href="#lucide-moon"></use></svg>
+  </button>
+</header>
+
+<main id="wikiTreeDiagramsView">
+  <!-- Portada: catálogo de árboles -->
+  <section id="wtdCatalog" class="wtd-catalog">
+    <div class="wtd-cat-head">
+      <div>
+        <h1 id="wtdCatalogTitle"></h1>
+        <p id="wtdTagline" class="wtd-tagline"></p>
+      </div>
+      <input id="wtdFilter" class="input-plain" type="search" aria-label="Filter">
+    </div>
+    <div id="wtdCatChips" class="filter-chips"></div>
+    <div id="wtdCatalogList" class="catalog-grid wtd-grid"></div>
+  </section>
+
+  <!-- Diagrama del árbol seleccionado -->
+  <section id="wtdDiagram" class="wtd-diagram hidden">
+    <div class="wtd-diag-head">
+      <button id="wtdBack" class="wtd-tb-btn" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-arrow-left"></use></svg> <span id="wtdBackLbl"></span></button>
+      <nav id="wtdCrumbs" class="wtd-breadcrumb" aria-label="Path"></nav>
+      <input id="wtdSearch" class="input-plain wtd-search" type="search" aria-label="Search">
+      <div class="wtd-diag-actions">
+        <button id="wtdContinue" class="wtd-tb-btn hidden" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-play"></use></svg> <span id="wtdContinueLbl"></span></button>
+        <span class="wtd-tb-sep" aria-hidden="true"></span>
+        <button id="wtdFavBtn" class="wtd-tb-btn" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-star"></use></svg> <span data-i18n="favoritesTitle"></span></button>
+        <button id="wtdRecBtn" class="wtd-tb-btn" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-history"></use></svg> <span data-i18n="recentsTitle"></span></button>
+        <button id="wtdAchBtn" class="wtd-tb-btn" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-trophy"></use></svg> <span data-i18n="achievementsTitle"></span></button>
+        <span class="wtd-tb-sep" aria-hidden="true"></span>
+        <button id="wtdCollapseBtn" class="wtd-tb-btn wtd-tb-icon" type="button" data-i18n-title="wtdCollapse"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-chevrons-down-up"></use></svg></button>
+        <button id="wtdExpandBtn" class="wtd-tb-btn wtd-tb-icon" type="button" data-i18n-title="wtdExpandAll"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-chevrons-up-down"></use></svg></button>
+        <button id="wtdZoomOut" class="wtd-tb-btn wtd-tb-icon" type="button" title="Zoom −"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-zoom-out"></use></svg></button>
+        <button id="wtdZoomReset" class="wtd-tb-btn wtd-tb-icon" type="button" data-i18n-title="wtdFitAll"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-maximize"></use></svg></button>
+        <button id="wtdZoomIn" class="wtd-tb-btn wtd-tb-icon" type="button" title="Zoom +"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-zoom-in"></use></svg></button>
+      </div>
+      <div id="wtdFavMenu" class="wtd-fav-menu hidden" role="menu"></div>
+    </div>
+    <div class="wtd-diag-body">
+      <aside id="wtdSidebar" class="wtd-sidebar" aria-label="Tree info">
+        <div id="wtdSideProgress" class="wtd-side-progress"></div>
+        <div id="wtdSideList" class="wtd-side-list"></div>
+        <div id="wtdMinimap" class="wtd-minimap" aria-label="Minimap"></div>
+      </aside>
+      <div id="wtdCanvas" class="wtd-canvas"></div>
+      <aside id="wtdPanel" class="wtd-panel hidden" aria-live="polite"></aside>
+    </div>
+    <div id="wtdTooltip" class="wtd-tooltip hidden"></div>
+  </section>
+
+  <div id="wtdConfirm" class="wtd-modal hidden"></div>
+
+  <!-- Artículo completo de Wikipedia, dentro del visor -->
+  <div id="wtdWikiPopup" class="wtd-wiki-popup hidden" role="dialog" aria-modal="true" aria-labelledby="wtdWikiTitle">
+    <div class="wtd-wiki-card">
+      <div class="wtd-wiki-head">
+        <svg class="lucide-icon wtd-wiki-logo" aria-hidden="true"><use href="#lucide-tree-pine"></use></svg>
+        <span id="wtdWikiTitle" class="wtd-wiki-title"></span>
+        <a id="wtdWikiExt" class="wtd-tb-btn wtd-tb-icon" href="#" target="_blank" rel="noopener"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-external-link"></use></svg></a>
+        <button id="wtdWikiClose" class="wtd-wiki-close" type="button"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-x"></use></svg></button>
+      </div>
+      <div class="wtd-wiki-body">
+        <div id="wtdWikiLoading" class="wtd-wiki-loading"></div>
+        <iframe id="wtdWikiFrame" class="wtd-wiki-frame" title="Wikipedia" src="about:blank" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="app-footer">
+  <span>© 2026 <strong>Álvaro C. Chulvi</strong> · <a href="https://www.offlined.org" target="_blank" rel="noopener">Offlined</a> · <a href="https://github.com/Aruvaro-Chulvi/WikiTrees" target="_blank" rel="noopener">GitHub</a></span>
+  <span id="licenseLine" class="license-line"></span>
+</footer>
+
+<script src="viewer/icons.js"></script>
+<script src="viewer/i18n.js"></script>
+<script src="viewer/app.js"></script>
+</body>
+</html>

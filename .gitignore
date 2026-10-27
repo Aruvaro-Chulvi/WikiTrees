@@ -1,0 +1,7 @@
+# Private: generation scripts and caches (never published)
+private/
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
