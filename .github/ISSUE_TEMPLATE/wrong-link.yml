@@ -1,0 +1,92 @@
+name: "🔗 Wrong link / Enlace erróneo"
+description: "A node opens the wrong Wikipedia article, a disambiguation page or nothing. / Un nodo abre un artículo de Wikipedia equivocado, una desambiguación o nada."
+title: "[Wrong link] "
+labels: ["wrong link"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping to improve WikiTrees! One wrong link per report, please.
+        ¡Gracias por ayudar a mejorar WikiTrees! Un enlace erróneo por aviso, por favor.
+  - type: dropdown
+    id: tree
+    attributes:
+      label: "Tree / Árbol"
+      options:
+        - Animalia (animalia)
+        - Plantae (plantae)
+        - Fungi (fungi)
+        - Protista (protista)
+        - Astronomical Bodies (astronomy_bodies)
+        - Dinosaur Classification (dinosaurs)
+        - Human Body Parts (human_body_parts)
+        - Viruses & Viral Diseases (viruses)
+        - Diseases by body system (diseases_icd)
+        - Medicines by class (medicines_atc)
+        - Continents, Countries & Capitals (continents_countries_cities)
+        - World Languages (world_languages)
+        - Ethnicities & Cultures (ethnic_groups)
+        - Branches of Knowledge (branches_of_knowledge)
+        - Periodic Table (periodic_elements)
+        - Mathematics (mathematics)
+        - Physics (physics)
+        - Chemistry (chemistry)
+        - Art Movements & Artists (art_movements_artists)
+        - World Museums (world_museums)
+        - World cuisines (world_cuisines)
+        - Nutrients (nutrients)
+        - Aromatic Plants (aromatic_plants)
+        - Minerals (minerals)
+        - Mythologies of the world (mythologies)
+        - Empires and civilizations (empires)
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: "Language / Idioma"
+      options:
+        - English (en)
+        - Español (es)
+        - Français (fr)
+        - Português (pt)
+        - Italiano (it)
+        - Deutsch (de)
+        - Русский (ru)
+        - 中文 (zh)
+        - हिन्दी (hi)
+        - العربية (ar)
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: "Node / Nodo"
+      description: "Name of the node, or its path as shown at the top of the viewer. / Nombre del nodo, o su ruta tal como sale arriba en el visor."
+      placeholder: "Nutrients › Macronutrients › Carbohydrate"
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: "Problem / Problema"
+      options:
+        - "Opens the wrong article / Abre un artículo equivocado"
+        - "Opens a disambiguation page / Abre una página de desambiguación"
+        - "Has no link, but the article exists / No tiene enlace, pero el artículo existe"
+        - "The article does not exist / El artículo no existe"
+        - "Wrong name or translation / Nombre o traducción incorrectos"
+        - "Other / Otro"
+    validations:
+      required: true
+  - type: input
+    id: correct
+    attributes:
+      label: "Correct article / Artículo correcto"
+      description: "Link to the right Wikipedia article in that language, if you know it. / Enlace al artículo correcto de Wikipedia en ese idioma, si lo sabes."
+      placeholder: "https://es.wikipedia.org/wiki/Glúcido"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes / Notas"
+      description: "Anything else that helps. / Cualquier otra cosa que ayude."
