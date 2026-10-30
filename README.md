@@ -1,5 +1,7 @@
 # 🌳 WikiTrees
 
+![WikiTrees — Wikipedia topics as interactive trees: 26 trees, 35,000+ nodes, 10 languages](.github/social-preview.png)
+
 **Wikipedia topics as interactive trees, in 10 languages.**
 By **Álvaro C. Chulvi** · a project of **[Offlined](https://www.offlined.org)**
 
