@@ -15,6 +15,9 @@ You may use, copy, modify and share WikiTrees **for non-commercial purposes**, c
 Commercial use is reserved to the author: if you want to use WikiTrees commercially, get in touch through
 [offlined.org](https://www.offlined.org).
 
+**Offlined** (the application by Álvaro C. Chulvi and Eric Uguet, https://www.offlined.org) is authorized by
+the author to use, include and distribute WikiTrees, also for commercial purposes.
+
 ## How to credit
 
 > WikiTrees by Álvaro C. Chulvi, a project of Offlined (https://www.offlined.org) — CC BY-NC-SA 4.0
