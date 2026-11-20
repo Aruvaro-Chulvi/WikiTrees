@@ -1,0 +1,93 @@
+# A tree sent with the «New community tree» issue form: download it, check it (also every link
+# against Wikipedia), answer in the issue and, if it passes, open a pull request with it.
+# Nothing from the issue is executed: the tree is JSON, the cover is checked as PNG, and the
+# issue text reaches the script only through environment variables.
+# Publishing happens only when the maintainer merges the pull request (see pages.yml).
+name: Community tree intake
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions: {}
+
+concurrency:
+  group: community-intake-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  intake:
+    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'new tree')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - name: Check the tree
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_CREATED: ${{ github.event.issue.created_at }}
+        run: python3 .github/scripts/community_intake.py --out="$RUNNER_TEMP/work"
+      - name: Answer in the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          # one comment from the bot, updated on every check
+          CID=$(gh api "repos/$GITHUB_REPOSITORY/issues/$NUMBER/comments" --paginate \
+                --jq '[.[] | select(.user.login == "github-actions[bot]" and (.body | contains("<!-- wikitrees-community-bot -->")))][0].id // empty')
+          if [ -n "$CID" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$CID" -F body=@"$W/report.md" > /dev/null
+          else
+            gh issue comment "$NUMBER" --body-file "$W/report.md"
+          fi
+          if [ "$(jq -r .ok "$W/result.json")" = "true" ]; then
+            gh issue edit "$NUMBER" --remove-label "needs changes" 2>/dev/null || true
+          else
+            gh issue edit "$NUMBER" --add-label "needs changes" || true
+          fi
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          W="$RUNNER_TEMP/work"
+          [ "$(jq -r .ok "$W/result.json")" = "true" ] || exit 0
+          FOLDER=$(jq -r .folder "$W/result.json")
+          TITLE=$(jq -r .title "$W/result.json")
+          # FOLDER was built from the GitHub user and a slug checked against [a-z0-9_]
+          [[ "$FOLDER" =~ ^[a-z0-9_]+\.[a-z0-9_]+$ ]] || { echo "bad folder"; exit 1; }
+          BRANCH="community/$FOLDER"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add -A "community/$FOLDER"
+          git commit -m "Community tree: $FOLDER (#$NUMBER)" || { echo "no changes"; }
+          git push --force origin "$BRANCH"
+          {
+            echo "Community tree sent in #$NUMBER by @${{ github.event.issue.user.login }}."
+            echo
+            echo "- Folder: \`community/$FOLDER/\`"
+            echo "- The contributor ticked the [contributor agreement](https://github.com/$GITHUB_REPOSITORY/blob/main/CONTRIBUTOR-AGREEMENT.md) (version 1) in the issue."
+            echo "- The bot checked the format and every link against Wikipedia (report in the issue)."
+            echo
+            echo "**Review by hand before merging:** topic, hierarchy, titles in the 10 languages, links, suitability. Merging publishes it."
+            echo
+            echo "Closes #$NUMBER"
+          } > "$W/pr.md"
+          PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$PR" ]; then
+            gh pr edit "$PR" --body-file "$W/pr.md"
+            gh pr comment "$PR" --body "Updated from #$NUMBER."
+          else
+            gh pr create --base main --head "$BRANCH" --title "Community tree: ${TITLE:-$FOLDER}" \
+              --body-file "$W/pr.md" --label "community tree"
+          fi

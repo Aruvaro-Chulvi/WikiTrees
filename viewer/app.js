@@ -8,6 +8,12 @@ const LANGS = ["en", "es", "fr", "pt", "it", "de", "ru", "zh", "hi", "ar"];
 const DATA_DIR = "trees/online/";
 const IMG_DIR = "trees/images/";
 const UA = "WikiTrees viewer (https://github.com/Aruvaro-Chulvi/WikiTrees)";
+// Árboles de la comunidad: los publica .github/workflows/pages.yml desde community/
+const COM_DIR = "trees/community/";
+const COM_CAT = "__community";
+const REPO_URL = "https://github.com/Aruvaro-Chulvi/WikiTrees";
+const PREVIEW_ID = "preview";            // vista previa del comprobador (community-kit/check.html)
+const PREVIEW_KEY = "wikitrees:preview";
 
 const S = { lang: "en", visited: {}, favs: [] };
 
@@ -32,12 +38,32 @@ async function fetchCatalog(){
   if (!_catalog){
     const r = await fetch(DATA_DIR + "index.json");
     if (!r.ok) throw new Error("catalog");
-    _catalog = await r.json();
+    const cat = await r.json();
+    // Los de la comunidad (si el sitio los tiene: en local, sin pages.yml, no hay)
+    try {
+      const c = await fetch(COM_DIR + "index.json", { cache: "no-cache" });
+      if (c.ok){
+        const j = await c.json();
+        const com = (Array.isArray(j.trees) ? j.trees : []).filter(x => x && /^c\.[a-z0-9_]+\.[a-z0-9_]+$/.test(x.id))
+          .map(x => ({ ...x, community: true }));
+        cat.items = [...(cat.items || []), ...com];
+      }
+    } catch {}
+    _catalog = cat;
   }
   return _catalog;
 }
+function readPreview(){
+  try { const v = localStorage.getItem(PREVIEW_KEY); return v ? JSON.parse(v) : null; } catch { return null; }
+}
 async function fetchTree(id){
-  if (!_trees.has(id)) _trees.set(id, fetch(DATA_DIR + encodeURIComponent(id) + ".json")
+  if (id === PREVIEW_ID){
+    const p = readPreview();
+    if (!p || !p.tree) throw new Error("preview");
+    return p.tree;
+  }
+  const url = id.startsWith("c.") ? `${COM_DIR}online/${encodeURIComponent(id)}.json` : DATA_DIR + encodeURIComponent(id) + ".json";
+  if (!_trees.has(id)) _trees.set(id, fetch(url)
     .then(r => { if (!r.ok) throw new Error("tree"); return r.json(); })
     .catch(e => { _trees.delete(id); throw e; }));
   return _trees.get(id);
@@ -215,6 +241,8 @@ function wtdRenderChips(cats){
   const chip = (id, label, emoji, count, active) =>
     `<button class="filter-chip${active ? " active" : ""}" data-cat="${id || ""}">${emoji ? emoji + " " : ""}${_html(label)}<span class="count">${count}</span></button>`;
   let html = chip("", t("all"), "✨", WTD.items.length, !WTD.selectedCat);
+  const nCom = WTD.items.filter(it => it.community).length;
+  if (nCom) html += chip(COM_CAT, t("community"), "🤝", nCom, WTD.selectedCat === COM_CAT);
   for (const c of cats){
     const n = counts[c.id] || 0; if (!n) continue;
     const L = WTD.categoriesById[c.id];
@@ -236,20 +264,25 @@ function wtdRenderCatalog(){
   if (!box) return;
   const q = (document.getElementById("wtdFilter")?.value || "").trim().toLowerCase();
   let list = WTD.items.slice();
-  if (WTD.selectedCat) list = list.filter(it => it.category === WTD.selectedCat);
+  if (WTD.selectedCat === COM_CAT) list = list.filter(it => it.community);
+  else if (WTD.selectedCat) list = list.filter(it => it.category === WTD.selectedCat);
   if (q) list = list.filter(it => {
     const L = (it.i18n && (it.i18n[S.lang] || it.i18n.en)) || {};
-    return `${L.title || it.id} ${L.description || ""}`.toLowerCase().includes(q);
+    return `${L.title || it.id} ${L.description || ""} ${it.author || ""}`.toLowerCase().includes(q);
   });
   const fmt = n => Number(n || 0).toLocaleString(S.lang);
-  box.innerHTML = list.map(it => {
+  const comNote = WTD.selectedCat === COM_CAT
+    ? `<div class="wt-com-note"><span>${_html(t("communityNote"))}</span>
+        <a class="ui-btn ui-btn--secondary ui-btn--sm" href="${_html(contributingUrl())}" target="_blank" rel="noopener">${_html(t("addTree"))}</a></div>` : "";
+  box.innerHTML = comNote + list.map(it => {
     const L = (it.i18n && (it.i18n[S.lang] || it.i18n.en)) || {};
     const title = L.title || it.id, desc = L.description || "";
     const cat = WTD.categoriesById[it.category || ""] || null;
     const nodes = it.nodes && it.nodes[S.lang];
-    return `<div class="catalog-card" data-id="${_html(it.id)}" role="button" tabindex="0">
-      <img class="taxo-card-img" src="${IMG_DIR}${encodeURIComponent(it.id)}.png" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
-      <h4>${_html(title)}</h4><p>${_html(desc)}</p>
+    return `<div class="catalog-card${it.community ? " is-community" : ""}" data-id="${_html(it.id)}" role="button" tabindex="0">
+      ${cardCover(it)}
+      ${it.community ? `<span class="wt-com-badge">🤝 ${_html(t("communityBadge"))}</span>` : ""}
+      <h4>${_html(title)}</h4>${it.community && it.author ? `<small class="wt-com-by">${_html(fill(t("communityBy"), { a: it.author }))}</small>` : ""}<p>${_html(desc)}</p>
       <div class="row"><span class="cat-tag">${cat ? `${cat.emoji} ${_html(cat.label)}` : ""}</span>
         ${nodes ? `<span class="card-meta">${_html(fill(t("nodes"), { n: fmt(nodes) }))}</span>` : ""}</div>
       <button class="ui-btn ui-btn--secondary ui-btn--sm wtd-open-btn">${_html(t("wtdOpen"))}</button>
@@ -261,6 +294,19 @@ function wtdRenderCatalog(){
     card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
   });
 }
+
+// Portada: la del árbol, o una dibujada con su emoji (árboles de la comunidad sin portada)
+function autoCover(emoji, seed){
+  let h = 0; for (const ch of String(seed || "")) h = (h * 31 + ch.codePointAt(0)) >>> 0;
+  const c = WTD.PALETTE[h % WTD.PALETTE.length];
+  return `<div class="taxo-card-img wt-auto-cover" style="--wt-c:${c}" aria-hidden="true"><span>${_html(emoji || "🌳")}</span></div>`;
+}
+function cardCover(it){
+  if (!it.community) return `<img class="taxo-card-img" src="${IMG_DIR}${encodeURIComponent(it.id)}.png" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`;
+  if (it.cover && it.cover.path) return `<img class="taxo-card-img" src="${_html(it.cover.path)}" alt="" loading="lazy">`;
+  return autoCover(it.emoji, it.id);
+}
+function contributingUrl(){ return `${REPO_URL}/blob/main/CONTRIBUTING${S.lang === "es" ? ".es" : ""}.md`; }
 
 function goCatalog(push){
   wtdCloseWikiPopup(); wtdHidePanel(); wtdTipHide();
@@ -299,7 +345,7 @@ async function wtdOpenTree(treeId, push){
   let data;
   try { data = await fetchTree(treeId); } catch { alert(t("loadError")); return; }
   try { await fetchCatalog(); } catch {}
-  const item = (_catalog?.items || []).find(it => it.id === treeId);
+  const item = treeId === PREVIEW_ID ? (readPreview() || {}).meta || null : (_catalog?.items || []).find(it => it.id === treeId);
   const IL = item ? ((item.i18n && (item.i18n[S.lang] || item.i18n.en)) || {}) : {};
   const root = localizeNode(data, S.lang);
   wtdComputeLeaves(root);
@@ -312,6 +358,7 @@ async function wtdOpenTree(treeId, push){
   _wtdMigrateProgress();
   if (push) history.pushState(null, "", `#${S.lang}/${treeId}`);
   document.title = `${WTD.treeTitle} · WikiTrees`;
+  document.body.classList.toggle("wt-previewing", treeId === PREVIEW_ID);
   if (!WTD._bound) wtdBind();
   const _se = document.getElementById("wtdSearch"); if (_se) _se.value = "";
   document.getElementById("wtdCatalog")?.classList.add("hidden");
@@ -1124,6 +1171,40 @@ function wtdZoomBy(factor, cx, cy){
 /* ============================================================
    Arranque y rutas: #<idioma>/<árbol>
    ============================================================ */
+// Textos de los árboles de la comunidad (10 idiomas)
+var I18N_COM = {
+  en: { community: "Community", communityBadge: "Community tree", communityBy: "by {a}", addTree: "Add your tree",
+        communityNote: "Trees made by other people with the help of AI and reviewed by Offlined before they are published.",
+        previewBanner: "Preview of your file — not published" },
+  es: { community: "Comunidad", communityBadge: "Árbol de la comunidad", communityBy: "por {a}", addTree: "Añade tu árbol",
+        communityNote: "Árboles hechos por otras personas con ayuda de la IA y revisados por Offlined antes de publicarse.",
+        previewBanner: "Vista previa de tu archivo: no está publicado" },
+  fr: { community: "Communauté", communityBadge: "Arbre de la communauté", communityBy: "par {a}", addTree: "Ajoutez votre arbre",
+        communityNote: "Des arbres créés par d'autres personnes avec l'aide de l'IA et relus par Offlined avant leur publication.",
+        previewBanner: "Aperçu de votre fichier — non publié" },
+  pt: { community: "Comunidade", communityBadge: "Árvore da comunidade", communityBy: "por {a}", addTree: "Adiciona a tua árvore",
+        communityNote: "Árvores feitas por outras pessoas com a ajuda da IA e revistas pelo Offlined antes de serem publicadas.",
+        previewBanner: "Pré-visualização do teu ficheiro — não publicado" },
+  it: { community: "Comunità", communityBadge: "Albero della comunità", communityBy: "di {a}", addTree: "Aggiungi il tuo albero",
+        communityNote: "Alberi creati da altre persone con l'aiuto dell'IA e revisionati da Offlined prima della pubblicazione.",
+        previewBanner: "Anteprima del tuo file — non pubblicato" },
+  de: { community: "Community", communityBadge: "Community-Baum", communityBy: "von {a}", addTree: "Füge deinen Baum hinzu",
+        communityNote: "Bäume, die andere Menschen mit Hilfe von KI erstellt haben und die Offlined vor der Veröffentlichung prüft.",
+        previewBanner: "Vorschau deiner Datei — nicht veröffentlicht" },
+  ru: { community: "Сообщество", communityBadge: "Дерево сообщества", communityBy: "автор: {a}", addTree: "Добавьте своё дерево",
+        communityNote: "Деревья, созданные другими людьми с помощью ИИ и проверенные Offlined перед публикацией.",
+        previewBanner: "Предпросмотр вашего файла — не опубликовано" },
+  zh: { community: "社区", communityBadge: "社区之树", communityBy: "作者：{a}", addTree: "添加你的树",
+        communityNote: "由其他人借助 AI 制作、并在发布前经过 Offlined 审核的树。",
+        previewBanner: "你的文件预览——尚未发布" },
+  hi: { community: "समुदाय", communityBadge: "समुदाय का वृक्ष", communityBy: "लेखक: {a}", addTree: "अपना वृक्ष जोड़ें",
+        communityNote: "दूसरे लोगों द्वारा AI की मदद से बनाए गए वृक्ष, जिन्हें प्रकाशित करने से पहले Offlined जाँचता है।",
+        previewBanner: "आपकी फ़ाइल का पूर्वावलोकन — प्रकाशित नहीं" },
+  ar: { community: "المجتمع", communityBadge: "شجرة من المجتمع", communityBy: "بواسطة {a}", addTree: "أضف شجرتك",
+        communityNote: "أشجار صنعها أشخاص آخرون بمساعدة الذكاء الاصطناعي وراجعها Offlined قبل نشرها.",
+        previewBanner: "معاينة ملفك — غير منشور" },
+};
+
 function parseHash(){
   const [lang, id] = location.hash.replace(/^#\/?/, "").split("/");
   return { lang: LANGS.includes(lang) ? lang : null, id: id ? decodeURIComponent(id) : null };
@@ -1136,6 +1217,8 @@ async function route(){
 }
 
 (function boot(){
+  for (const l of Object.keys(I18N_COM)) Object.assign(I18N[l] || (I18N[l] = {}), I18N_COM[l]);
+  document.getElementById("addTreeLink")?.addEventListener("click", (e) => { e.currentTarget.href = contributingUrl(); });
   const nav = (navigator.languages || [navigator.language || "en"]).map(l => String(l).slice(0, 2).toLowerCase());
   S.lang = parseHash().lang || store.get("lang", "") || nav.find(l => LANGS.includes(l)) || "en";
   if (!LANGS.includes(S.lang)) S.lang = "en";
@@ -1144,3 +1227,4 @@ async function route(){
   window.addEventListener("popstate", route);
   route();
 })();
+

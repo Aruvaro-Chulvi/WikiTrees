@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community tree checker · WikiTrees</title>
+<meta name="description" content="Check a WikiTrees community tree file before sending it.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B3%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../viewer/style.css">
+<style>
+  body { overflow: auto; }
+  .ck-wrap { max-width: 860px; margin: 0 auto; padding: 20px 16px 40px; display: flex; flex-direction: column; gap: 14px; }
+  .ck-wrap h1 { margin: 0; font-size: 1.4rem; }
+  .ck-intro { margin: 0; opacity: .8; }
+  .ck-links { display: flex; gap: 8px; flex-wrap: wrap; }
+  .ck-links a { text-decoration: none; }
+  .ck-drop { border: 2px dashed var(--border); border-radius: 12px; padding: 28px 16px; text-align: center; cursor: pointer;
+    background: var(--panel); display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .ck-drop:hover, .ck-drop.is-over { border-color: var(--accent); }
+  .ck-drop .lucide-icon { width: 28px; height: 28px; opacity: .7; }
+  .ck-file { font-size: 13px; opacity: .7; }
+  .ck-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .ck-actions a { text-decoration: none; }
+  .ck-progress { font-size: 13px; opacity: .75; }
+  .ck-status { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 10px; }
+  .ck-status.is-ok { background: color-mix(in srgb, #3fbf7f 20%, var(--panel)); }
+  .ck-status.is-bad { background: color-mix(in srgb, #ff2a60 16%, var(--panel)); }
+  .ck-card { border: 1px solid var(--border); border-radius: 10px; padding: 12px; background: var(--panel); }
+  .ck-card h3 { margin: 0 0 4px; }
+  .ck-card p { margin: 2px 0; }
+  .ck-meta { font-size: 13px; opacity: .75; font-variant-numeric: tabular-nums; }
+  .ck-list { margin: 0; padding-inline-start: 20px; font-size: 13px; display: flex; flex-direction: column; gap: 4px; }
+  .ck-errors li::marker { color: #ff2a60; }
+  .ck-notes summary { cursor: pointer; font-size: 13px; }
+  #ckSend:not(.is-ready) { opacity: .6; }
+</style>
+</head>
+<body>
+<header class="app-header">
+  <a class="brand" href="../index.html">
+    <svg class="lucide-icon" aria-hidden="true"><use href="#lucide-tree-pine"></use></svg>
+    <span class="brand-name">WikiTrees</span>
+  </a>
+  <span class="spacer"></span>
+</header>
+<main class="ck-wrap">
+  <h1 data-t="title"></h1>
+  <p class="ck-intro" data-t="intro"></p>
+  <div class="ck-links">
+    <a id="ckHowto" class="ui-btn ui-btn--secondary ui-btn--sm" target="_blank" rel="noopener" data-t="howto"></a>
+    <a id="ckPrompt" class="ui-btn ui-btn--secondary ui-btn--sm" target="_blank" rel="noopener" data-t="prompt"></a>
+    <a id="ckFormat" class="ui-btn ui-btn--secondary ui-btn--sm" target="_blank" rel="noopener" data-t="format"></a>
+    <a id="ckExample" class="ui-btn ui-btn--secondary ui-btn--sm" download data-t="example"></a>
+  </div>
+  <div id="ckDrop" class="ck-drop" role="button" tabindex="0">
+    <svg class="lucide-icon" aria-hidden="true"><use href="#lucide-upload"></use></svg>
+    <span data-t="drop"></span>
+    <span id="ckFileName" class="ck-file"></span>
+    <input id="ckInput" type="file" accept=".json,application/json" hidden>
+  </div>
+  <div class="ck-actions">
+    <button id="ckOnline" class="ui-btn ui-btn--secondary" type="button" disabled><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-link"></use></svg> <span data-t="online"></span></button>
+    <button id="ckPreview" class="ui-btn ui-btn--secondary" type="button" disabled><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-eye"></use></svg> <span data-t="preview"></span></button>
+    <a id="ckSend" class="ui-btn ui-btn--primary" target="_blank" rel="noopener"><svg class="lucide-icon" aria-hidden="true"><use href="#lucide-send"></use></svg> <span data-t="send"></span></a>
+    <span id="ckProgress" class="ck-progress"></span>
+  </div>
+  <div id="ckResult" aria-live="polite"></div>
+</main>
+<script src="../viewer/icons.js"></script>
+<script src="check.js"></script>
+</body>
+</html>

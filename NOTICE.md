@@ -9,6 +9,8 @@
 | Trees (structure, titles, links, metadata) | `trees/offlined/`, `trees/online/` | [CC BY-NC-SA 4.0](LICENSE) |
 | Cover images (made by the author) | `trees/images/` | [CC BY-NC-SA 4.0](LICENSE) |
 | Viewer source code | `index.html`, `viewer/` | [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md) |
+| Community trees (each by its author, see `about.author`) | `community/` | [CC BY-NC-SA 4.0](LICENSE) + grant to Offlined ([contributor agreement](CONTRIBUTOR-AGREEMENT.md)) |
+| Community tools | `community-kit/*.py`, `community-kit/check.*` | [MIT](community-kit/LICENSE) |
 | Icons | `viewer/icons.js` | [Lucide](https://lucide.dev), ISC License ([text](viewer/LICENSE-lucide.txt)) |
 
 You may use, copy, modify and share WikiTrees **for non-commercial purposes**, crediting the author.

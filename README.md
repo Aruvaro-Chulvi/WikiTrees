@@ -102,11 +102,26 @@ Each node looks like this:
   language; branches without an article stay as a label.
 - The root of each file has an `about` block with the author, license and format.
 
+### Community trees
+
+Anyone can build a new tree — with the help of an AI assistant such as Claude — and send it. The maintainer
+reviews every tree by hand; approved ones appear in the viewer under **🤝 Community** and can be downloaded
+from **Offlined** (WikiTrees → *Community WikiTrees*).
+
+1. Build it with the [prompt for your AI](community-kit/PROMPT.md), following the [format](community-kit/FORMAT.md)
+   ([example](community-kit/example/vitamins.json)).
+2. Check it with the [web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+3. Send it with the [“New community tree” form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml).
+
+Everything is explained in [CONTRIBUTING.md](CONTRIBUTING.md). The official trees are not edited by the community.
+
 ### License
 
 - **Trees and covers:** [CC BY-NC-SA 4.0](LICENSE) — use, share and adapt them for **non-commercial**
   purposes, crediting the author and sharing your changes under the same license.
 - **Viewer code:** [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md).
+- **Community trees:** CC BY-NC-SA 4.0, by their authors; each author also grants Offlined the right to include
+  them ([contributor agreement](CONTRIBUTOR-AGREEMENT.md)). **Community tools** (`community-kit/`): MIT.
 - **Commercial use** is reserved to the author: contact through [offlined.org](https://www.offlined.org).
 
 Please credit it as: *WikiTrees by Álvaro C. Chulvi, a project of Offlined (https://www.offlined.org)*.
@@ -145,11 +160,26 @@ Cada árbol viene en dos versiones del mismo JSON:
 
 El formato de cada nodo está explicado arriba, en la parte en inglés.
 
+### Árboles de la comunidad
+
+Cualquiera puede hacer un árbol nuevo —con ayuda de un asistente de IA como Claude— y enviarlo. El responsable
+revisa cada árbol a mano; los aprobados aparecen en el visor en **🤝 Comunidad** y se pueden descargar desde
+**Offlined** (WikiÁrboles → *WikiÁrboles de la comunidad*).
+
+1. Hazlo con el [prompt para tu IA](community-kit/PROMPT.md), siguiendo el [formato](community-kit/FORMAT.md)
+   ([ejemplo](community-kit/example/vitamins.json)).
+2. Compruébalo con el [comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+3. Envíalo con el [formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml).
+
+Todo está explicado en [CONTRIBUTING.es.md](CONTRIBUTING.es.md). La comunidad no modifica los árboles oficiales.
+
 ### Licencia
 
 - **Árboles y portadas:** [CC BY-NC-SA 4.0](LICENSE): puedes usarlos, compartirlos y adaptarlos **sin fines
   comerciales**, citando al autor y compartiendo tus cambios con la misma licencia.
 - **Código del visor:** [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md).
+- **Árboles de la comunidad:** CC BY-NC-SA 4.0, de sus autores; cada autor concede además a Offlined el derecho a
+  incluirlos ([acuerdo](CONTRIBUTOR-AGREEMENT.md)). **Herramientas de la comunidad** (`community-kit/`): MIT.
 - **El uso comercial** queda reservado al autor: contacta a través de [offlined.org](https://www.offlined.org).
 
 Cítalo así: *WikiTrees, de Álvaro C. Chulvi, un proyecto de Offlined (https://www.offlined.org)*.

@@ -318,3 +318,19 @@ a { color: inherit; }
   .wtd-diag-actions { order: 3; }
   .app-footer { font-size: .7rem; }
 }
+
+/* Árboles de la comunidad */
+.wt-add-tree { text-decoration: none; }
+.wt-com-badge { align-self: flex-start; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+  background: color-mix(in srgb, #3fbf7f 18%, transparent); color: var(--ink); }
+.wt-com-by { font-size: 12px; opacity: .7; margin-top: -4px; }
+.wt-auto-cover { display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--wt-c) 70%, var(--panel)), color-mix(in srgb, var(--wt-c) 25%, var(--panel))); }
+.wt-auto-cover span { font-size: 54px; line-height: 1; filter: drop-shadow(0 2px 0 rgba(0,0,0,.08)); }
+.wt-com-note { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  padding: 10px 12px; border: 1px dashed var(--border); border-radius: 10px; font-size: 13px; }
+.wt-com-note a { text-decoration: none; }
+.wt-preview-banner { display: none; padding: 6px 16px; font-size: 13px; font-weight: 700; text-align: center;
+  background: color-mix(in srgb, #ffd700 35%, var(--panel)); color: var(--ink); }
+body.wt-previewing .wt-preview-banner { display: block; }
+@media (max-width: 640px) { .wt-add-tree span { display: none; } }

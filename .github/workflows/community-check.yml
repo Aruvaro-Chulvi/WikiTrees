@@ -1,0 +1,38 @@
+# Checks a pull request that adds or changes a community tree by hand (the ones opened by the
+# intake bot were already checked in their issue). Read-only, no secrets; the tools come from the
+# BASE branch, so a pull request cannot change how it is checked. Nothing is published here.
+name: Check community tree
+
+on:
+  pull_request:
+    paths: ["community/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Tools from the base branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+          persist-credentials: false
+      - name: The pull request
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_USER: ${{ github.event.pull_request.user.login }}
+        run: python3 base/.github/scripts/community_pr_check.py --repo=pr --base=${{ github.event.pull_request.base.sha }} --out=work
+      - name: Report
+        if: always()
+        run: cat work/report.md >> "$GITHUB_STEP_SUMMARY" || true

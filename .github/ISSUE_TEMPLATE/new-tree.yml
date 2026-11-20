@@ -1,0 +1,55 @@
+name: "🌳 New community tree / Nuevo árbol de la comunidad"
+description: "Send a tree you made (with an AI assistant, for example) to publish it in WikiTrees and Offlined. / Envía un árbol que has hecho (con un asistente de IA, por ejemplo) para publicarlo en WikiTrees y Offlined."
+title: "[New tree] "
+labels: ["new tree"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before sending:** read [CONTRIBUTING.md](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.md)
+        and check your file with the [web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+        A bot will check it again and reply here; if it finds errors, fix the file and **edit this issue** with the new attachment.
+
+        **Antes de enviarlo:** lee [CONTRIBUTING.es.md](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.es.md)
+        y comprueba tu archivo con el [comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+        Un bot lo volverá a comprobar y te contestará aquí; si encuentra errores, corrige el archivo y **edita este issue** con el adjunto nuevo.
+  - type: textarea
+    id: file
+    attributes:
+      label: "Tree file / Archivo del árbol"
+      description: |
+        Drag your `.json` file into this box (it becomes a link). Only one tree per issue.
+        Arrastra tu archivo `.json` a esta caja (se convierte en un enlace). Un solo árbol por issue.
+      placeholder: "[my_tree.json](https://github.com/user-attachments/files/…)"
+    validations:
+      required: true
+  - type: textarea
+    id: cover
+    attributes:
+      label: "Cover image (optional) / Portada (opcional)"
+      description: |
+        A PNG made by you, 64–2048 px (2:1 looks best, e.g. 1024×512), up to 600 KB. Without one, a cover is drawn with the tree's emoji.
+        Un PNG hecho por ti, de 64–2048 px (queda mejor en 2:1, p. ej. 1024×512), hasta 600 KB. Si no hay, se dibuja una con el emoji del árbol.
+    validations:
+      required: false
+  - type: textarea
+    id: about
+    attributes:
+      label: "About the tree / Sobre el árbol"
+      description: |
+        What it covers, how you made it (which AI assistant, which sources) and anything the reviewer should know.
+        Qué abarca, cómo lo hiciste (qué asistente de IA, qué fuentes) y lo que deba saber quien lo revise.
+    validations:
+      required: true
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "Agreement / Acuerdo"
+      options:
+        - label: |
+            I have read and accept the [contributor agreement](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md) (version 1): the tree is published under CC BY-NC-SA 4.0 with my name, and I grant Offlined the right to include it, also commercially.
+            He leído y acepto el [acuerdo](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md#español) (versión 1): el árbol se publica con CC BY-NC-SA 4.0 y mi nombre, y concedo a Offlined el derecho a incluirlo, también comercialmente.
+          required: true
+        - label: |
+            I have read the tree and checked its links; it is suitable for everyone. · He leído el árbol y comprobado sus enlaces; es apto para todos.
+          required: true

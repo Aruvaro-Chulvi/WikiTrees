@@ -1,0 +1,38 @@
+name: "🚩 Problem with a community tree / Problema con un árbol de la comunidad"
+description: "A mistake, something inappropriate or content that shouldn't be there. / Un error, algo inapropiado o un contenido que no debería estar."
+title: "[Community] "
+labels: ["community tree"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Community trees are made by other people and reviewed before they are published. If something got
+        through, tell us: the maintainer can fix it or withdraw the tree, and Offlined stops offering it.
+        Los árboles de la comunidad los hacen otras personas y se revisan antes de publicarse. Si algo se ha
+        colado, cuéntanoslo: se puede corregir o retirar el árbol, y Offlined deja de ofrecerlo.
+  - type: input
+    id: tree
+    attributes:
+      label: "Tree / Árbol"
+      description: "Its id (c.user.slug) or its title. / Su id (c.usuario.slug) o su título."
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "What happens / Qué pasa"
+      options:
+        - "Wrong link or title / Enlace o título erróneo"
+        - "Inappropriate or offensive content / Contenido inapropiado u ofensivo"
+        - "False or misleading information / Información falsa o engañosa"
+        - "Copied without permission / Copiado sin permiso"
+        - "Other / Otra cosa"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Details / Detalles"
+      description: "Which node, in which language, and what should it be? / ¿Qué nodo, en qué idioma, y qué debería ser?"
+    validations:
+      required: true

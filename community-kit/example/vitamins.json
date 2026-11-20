@@ -1,0 +1,3163 @@
+{
+  "format": "wikitrees-community/1",
+  "meta": {
+    "slug": "vitamins",
+    "author": "Álvaro C. Chulvi",
+    "category": "food_nutrition",
+    "emoji": "💊",
+    "i18n": {
+      "en": {
+        "title": "Vitamins",
+        "description": "The vitamins, their chemical forms and the diseases caused by their deficiency."
+      },
+      "es": {
+        "title": "Vitaminas",
+        "description": "Las vitaminas, sus formas químicas y las enfermedades que causa su carencia."
+      },
+      "fr": {
+        "title": "Vitamines",
+        "description": "Les vitamines, leurs formes chimiques et les maladies causées par leur carence."
+      },
+      "pt": {
+        "title": "Vitaminas",
+        "description": "As vitaminas, as suas formas químicas e as doenças causadas pela sua carência."
+      },
+      "it": {
+        "title": "Vitamine",
+        "description": "Le vitamine, le loro forme chimiche e le malattie causate dalla loro carenza."
+      },
+      "de": {
+        "title": "Vitamine",
+        "description": "Die Vitamine, ihre chemischen Formen und die Krankheiten, die ihr Mangel verursacht."
+      },
+      "ru": {
+        "title": "Витамины",
+        "description": "Витамины, их химические формы и болезни, вызванные их недостатком."
+      },
+      "zh": {
+        "title": "维生素",
+        "description": "维生素、它们的化学形式以及缺乏它们所引起的疾病。"
+      },
+      "hi": {
+        "title": "विटामिन",
+        "description": "विटामिन, उनके रासायनिक रूप और उनकी कमी से होने वाले रोग।"
+      },
+      "ar": {
+        "title": "الفيتامينات",
+        "description": "الفيتامينات وأشكالها الكيميائية والأمراض الناجمة عن نقصها."
+      }
+    }
+  },
+  "tree": {
+    "i18n": {
+      "en": {
+        "title": "Vitamin",
+        "wiki": "Vitamin"
+      },
+      "es": {
+        "title": "Vitamina",
+        "wiki": "Vitamina"
+      },
+      "fr": {
+        "title": "Vitamine",
+        "wiki": "Vitamine"
+      },
+      "pt": {
+        "title": "Vitamina",
+        "wiki": "Vitamina"
+      },
+      "it": {
+        "title": "Vitamine",
+        "wiki": "Vitamine"
+      },
+      "de": {
+        "title": "Vitamin",
+        "wiki": "Vitamin"
+      },
+      "ru": {
+        "title": "Витамины",
+        "wiki": "Витамины"
+      },
+      "zh": {
+        "title": "维生素",
+        "wiki": "维生素"
+      },
+      "hi": {
+        "title": "विटामिन",
+        "wiki": "विटामिन"
+      },
+      "ar": {
+        "title": "فيتامين",
+        "wiki": "فيتامين"
+      }
+    },
+    "children": [
+      {
+        "i18n": {
+          "en": {
+            "title": "Fat-soluble vitamins"
+          },
+          "es": {
+            "title": "Vitaminas liposolubles"
+          },
+          "fr": {
+            "title": "Vitamines liposolubles"
+          },
+          "pt": {
+            "title": "Vitaminas lipossolúveis"
+          },
+          "it": {
+            "title": "Vitamine liposolubili"
+          },
+          "de": {
+            "title": "Fettlösliche Vitamine"
+          },
+          "ru": {
+            "title": "Жирорастворимые витамины"
+          },
+          "zh": {
+            "title": "脂溶性维生素"
+          },
+          "hi": {
+            "title": "वसा में घुलनशील विटामिन"
+          },
+          "ar": {
+            "title": "الفيتامينات الذائبة في الدهون"
+          }
+        },
+        "noWiki": [
+          "en",
+          "es",
+          "fr",
+          "pt",
+          "it",
+          "de",
+          "ru",
+          "zh",
+          "hi",
+          "ar"
+        ],
+        "children": [
+          {
+            "i18n": {
+              "en": {
+                "title": "Vitamin A",
+                "wiki": "Vitamin A"
+              },
+              "es": {
+                "title": "Vitamina A",
+                "wiki": "Vitamina A"
+              },
+              "fr": {
+                "title": "Vitamine A",
+                "wiki": "Vitamine A"
+              },
+              "pt": {
+                "title": "Vitamina A",
+                "wiki": "Vitamina A"
+              },
+              "it": {
+                "title": "Vitamina A"
+              },
+              "de": {
+                "title": "Vitamin A",
+                "wiki": "Vitamin A"
+              },
+              "ru": {
+                "title": "Витамин A",
+                "wiki": "Витамин A"
+              },
+              "zh": {
+                "title": "維生素A",
+                "wiki": "維生素A"
+              },
+              "hi": {
+                "title": "विटामिन ए",
+                "wiki": "विटामिन ए"
+              },
+              "ar": {
+                "title": "فيتامين ألف",
+                "wiki": "فيتامين ألف"
+              }
+            },
+            "noWiki": [
+              "it"
+            ],
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Retinol",
+                    "wiki": "Retinol"
+                  },
+                  "es": {
+                    "title": "Retinol",
+                    "wiki": "Retinol"
+                  },
+                  "fr": {
+                    "title": "Rétinol",
+                    "wiki": "Rétinol"
+                  },
+                  "pt": {
+                    "title": "Retinol",
+                    "wiki": "Retinol"
+                  },
+                  "it": {
+                    "title": "Retinolo",
+                    "wiki": "Retinolo"
+                  },
+                  "de": {
+                    "title": "Retinol",
+                    "wiki": "Retinol"
+                  },
+                  "ru": {
+                    "title": "Ретинол",
+                    "wiki": "Ретинол"
+                  },
+                  "zh": {
+                    "title": "视黄醇",
+                    "wiki": "视黄醇"
+                  },
+                  "hi": {
+                    "title": "Retinol"
+                  },
+                  "ar": {
+                    "title": "رتينول",
+                    "wiki": "رتينول"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Retinal",
+                    "wiki": "Retinal"
+                  },
+                  "es": {
+                    "title": "Retinal",
+                    "wiki": "Retinal"
+                  },
+                  "fr": {
+                    "title": "Rétinal",
+                    "wiki": "Rétinal"
+                  },
+                  "pt": {
+                    "title": "Retinal",
+                    "wiki": "Retinal"
+                  },
+                  "it": {
+                    "title": "Retinale",
+                    "wiki": "Retinale"
+                  },
+                  "de": {
+                    "title": "Retinal",
+                    "wiki": "Retinal"
+                  },
+                  "ru": {
+                    "title": "Ретиналь",
+                    "wiki": "Ретиналь"
+                  },
+                  "zh": {
+                    "title": "视黄醛",
+                    "wiki": "视黄醛"
+                  },
+                  "hi": {
+                    "title": "Retinal"
+                  },
+                  "ar": {
+                    "title": "ريتينال",
+                    "wiki": "ريتينال"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Retinoic acid",
+                    "wiki": "Retinoic acid"
+                  },
+                  "es": {
+                    "title": "Ácido retinoico",
+                    "wiki": "Ácido retinoico"
+                  },
+                  "fr": {
+                    "title": "Acide rétinoïque",
+                    "wiki": "Acide rétinoïque"
+                  },
+                  "pt": {
+                    "title": "Ácido retinoico",
+                    "wiki": "Ácido retinoico"
+                  },
+                  "it": {
+                    "title": "Acido retinoico",
+                    "wiki": "Acido retinoico"
+                  },
+                  "de": {
+                    "title": "Retinsäuren",
+                    "wiki": "Retinsäuren"
+                  },
+                  "ru": {
+                    "title": "Ретиноевая кислота",
+                    "wiki": "Ретиноевая кислота"
+                  },
+                  "zh": {
+                    "title": "视黄酸",
+                    "wiki": "视黄酸"
+                  },
+                  "hi": {
+                    "title": "Retinoic acid"
+                  },
+                  "ar": {
+                    "title": "حمض الرتينويك",
+                    "wiki": "حمض الرتينويك"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Β-Carotene",
+                    "wiki": "Β-Carotene"
+                  },
+                  "es": {
+                    "title": "Β-caroteno",
+                    "wiki": "Β-caroteno"
+                  },
+                  "fr": {
+                    "title": "Bêta-Carotène",
+                    "wiki": "Bêta-Carotène"
+                  },
+                  "pt": {
+                    "title": "Betacaroteno",
+                    "wiki": "Betacaroteno"
+                  },
+                  "it": {
+                    "title": "Beta-carotene",
+                    "wiki": "Beta-carotene"
+                  },
+                  "de": {
+                    "title": "Carotine",
+                    "wiki": "Carotine"
+                  },
+                  "ru": {
+                    "title": "β-каротин"
+                  },
+                  "zh": {
+                    "title": "Β-胡萝卜素",
+                    "wiki": "Β-胡萝卜素"
+                  },
+                  "hi": {
+                    "title": "बीटा कैरोटीन",
+                    "wiki": "बीटा कैरोटीन"
+                  },
+                  "ar": {
+                    "title": "بيتا كاروتين",
+                    "wiki": "بيتا كاروتين"
+                  }
+                },
+                "noWiki": [
+                  "ru"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin A deficiency",
+                    "wiki": "Vitamin A deficiency"
+                  },
+                  "es": {
+                    "title": "Deficiencia de vitamina A",
+                    "wiki": "Deficiencia de vitamina A"
+                  },
+                  "fr": {
+                    "title": "Carence en vitamine A",
+                    "wiki": "Carence en vitamine A"
+                  },
+                  "pt": {
+                    "title": "Deficiência de vitamina A",
+                    "wiki": "Deficiência de vitamina A"
+                  },
+                  "it": {
+                    "title": "Ipovitaminosi A"
+                  },
+                  "de": {
+                    "title": "Vitamin-A-Mangel"
+                  },
+                  "ru": {
+                    "title": "Гиповитаминоз A",
+                    "wiki": "Гиповитаминоз A"
+                  },
+                  "zh": {
+                    "title": "維生素A缺乏"
+                  },
+                  "hi": {
+                    "title": "Vitamin A deficiency"
+                  },
+                  "ar": {
+                    "title": "نقص فيتامين أ",
+                    "wiki": "نقص فيتامين أ"
+                  }
+                },
+                "noWiki": [
+                  "it",
+                  "de",
+                  "zh",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Nyctalopia",
+                    "wiki": "Nyctalopia"
+                  },
+                  "es": {
+                    "title": "Nictalopía",
+                    "wiki": "Nictalopía"
+                  },
+                  "fr": {
+                    "title": "Héméralopie",
+                    "wiki": "Héméralopie"
+                  },
+                  "pt": {
+                    "title": "Nictalopia",
+                    "wiki": "Nictalopia"
+                  },
+                  "it": {
+                    "title": "Cecità notturna",
+                    "wiki": "Cecità notturna"
+                  },
+                  "de": {
+                    "title": "Nachtblindheit",
+                    "wiki": "Nachtblindheit"
+                  },
+                  "ru": {
+                    "title": "Никталопия",
+                    "wiki": "Никталопия"
+                  },
+                  "zh": {
+                    "title": "夜盲症",
+                    "wiki": "夜盲症"
+                  },
+                  "hi": {
+                    "title": "रतौंधी",
+                    "wiki": "रतौंधी"
+                  },
+                  "ar": {
+                    "title": "عشى",
+                    "wiki": "عشى"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Xerophthalmia",
+                    "wiki": "Xerophthalmia"
+                  },
+                  "es": {
+                    "title": "Xeroftalmia",
+                    "wiki": "Xeroftalmia"
+                  },
+                  "fr": {
+                    "title": "Xérophtalmie",
+                    "wiki": "Xérophtalmie"
+                  },
+                  "pt": {
+                    "title": "Xeroftalmia",
+                    "wiki": "Xeroftalmia"
+                  },
+                  "it": {
+                    "title": "Xeroftalmia",
+                    "wiki": "Xeroftalmia"
+                  },
+                  "de": {
+                    "title": "Xerophthalmie",
+                    "wiki": "Xerophthalmie"
+                  },
+                  "ru": {
+                    "title": "Ксерофтальмия",
+                    "wiki": "Ксерофтальмия"
+                  },
+                  "zh": {
+                    "title": "干眼病",
+                    "wiki": "干眼病"
+                  },
+                  "hi": {
+                    "title": "शुष्काक्षिपाक"
+                  },
+                  "ar": {
+                    "title": "جفاف الملتحمة",
+                    "wiki": "جفاف الملتحمة"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              }
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Vitamin D",
+                "wiki": "Vitamin D"
+              },
+              "es": {
+                "title": "Vitamina D",
+                "wiki": "Vitamina D"
+              },
+              "fr": {
+                "title": "Vitamine D",
+                "wiki": "Vitamine D"
+              },
+              "pt": {
+                "title": "Vitamina D",
+                "wiki": "Vitamina D"
+              },
+              "it": {
+                "title": "Vitamina D",
+                "wiki": "Vitamina D"
+              },
+              "de": {
+                "title": "Vitamin D",
+                "wiki": "Vitamin D"
+              },
+              "ru": {
+                "title": "Витамин D",
+                "wiki": "Витамин D"
+              },
+              "zh": {
+                "title": "维生素D",
+                "wiki": "维生素D"
+              },
+              "hi": {
+                "title": "विटामिन डी",
+                "wiki": "विटामिन डी"
+              },
+              "ar": {
+                "title": "فيتامين دي",
+                "wiki": "فيتامين دي"
+              }
+            },
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Ergocalciferol",
+                    "wiki": "Ergocalciferol"
+                  },
+                  "es": {
+                    "title": "Ergocalciferol",
+                    "wiki": "Ergocalciferol"
+                  },
+                  "fr": {
+                    "title": "Ergocalciférol",
+                    "wiki": "Ergocalciférol"
+                  },
+                  "pt": {
+                    "title": "Ergocalciferol",
+                    "wiki": "Ergocalciferol"
+                  },
+                  "it": {
+                    "title": "Ergocalciferolo",
+                    "wiki": "Ergocalciferolo"
+                  },
+                  "de": {
+                    "title": "Ergocalciferol",
+                    "wiki": "Ergocalciferol"
+                  },
+                  "ru": {
+                    "title": "Эргокальциферол",
+                    "wiki": "Эргокальциферол"
+                  },
+                  "zh": {
+                    "title": "麦角钙化醇",
+                    "wiki": "麦角钙化醇"
+                  },
+                  "hi": {
+                    "title": "एर्गोकैल्सिफेरॉल",
+                    "wiki": "एर्गोकैल्सिफेरॉल"
+                  },
+                  "ar": {
+                    "title": "إرغوكالسيفيرول",
+                    "wiki": "إرغوكالسيفيرول"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Cholecalciferol",
+                    "wiki": "Cholecalciferol"
+                  },
+                  "es": {
+                    "title": "Colecalciferol",
+                    "wiki": "Colecalciferol"
+                  },
+                  "fr": {
+                    "title": "Cholécalciférol",
+                    "wiki": "Cholécalciférol"
+                  },
+                  "pt": {
+                    "title": "Colecalciferol",
+                    "wiki": "Colecalciferol"
+                  },
+                  "it": {
+                    "title": "Colecalciferolo",
+                    "wiki": "Colecalciferolo"
+                  },
+                  "de": {
+                    "title": "Cholecalciferol",
+                    "wiki": "Cholecalciferol"
+                  },
+                  "ru": {
+                    "title": "Холекальциферол",
+                    "wiki": "Холекальциферол"
+                  },
+                  "zh": {
+                    "title": "胆钙化醇",
+                    "wiki": "胆钙化醇"
+                  },
+                  "hi": {
+                    "title": "कॉलेकैल्सिफेरॉल",
+                    "wiki": "कॉलेकैल्सिफेरॉल"
+                  },
+                  "ar": {
+                    "title": "كوليكالسيفيرول",
+                    "wiki": "كوليكالسيفيرول"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Calcifediol",
+                    "wiki": "Calcifediol"
+                  },
+                  "es": {
+                    "title": "Calcifediol",
+                    "wiki": "Calcifediol"
+                  },
+                  "fr": {
+                    "title": "Calcifédiol",
+                    "wiki": "Calcifédiol"
+                  },
+                  "pt": {
+                    "title": "Calcifediol",
+                    "wiki": "Calcifediol"
+                  },
+                  "it": {
+                    "title": "Calcidiolo",
+                    "wiki": "Calcidiolo"
+                  },
+                  "de": {
+                    "title": "Calcidiol",
+                    "wiki": "Calcidiol"
+                  },
+                  "ru": {
+                    "title": "Calcifediol"
+                  },
+                  "zh": {
+                    "title": "骨化二醇"
+                  },
+                  "hi": {
+                    "title": "कैल्सीफेडिओल"
+                  },
+                  "ar": {
+                    "title": "كالسيفيديول",
+                    "wiki": "كالسيفيديول"
+                  }
+                },
+                "noWiki": [
+                  "ru",
+                  "zh",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Calcitriol",
+                    "wiki": "Calcitriol"
+                  },
+                  "es": {
+                    "title": "Calcitriol",
+                    "wiki": "Calcitriol"
+                  },
+                  "fr": {
+                    "title": "Calcitriol",
+                    "wiki": "Calcitriol"
+                  },
+                  "pt": {
+                    "title": "Calcitriol",
+                    "wiki": "Calcitriol"
+                  },
+                  "it": {
+                    "title": "Calcitriolo",
+                    "wiki": "Calcitriolo"
+                  },
+                  "de": {
+                    "title": "Calcitriol",
+                    "wiki": "Calcitriol"
+                  },
+                  "ru": {
+                    "title": "Кальцитриол",
+                    "wiki": "Кальцитриол"
+                  },
+                  "zh": {
+                    "title": "骨化三醇",
+                    "wiki": "骨化三醇"
+                  },
+                  "hi": {
+                    "title": "कैल्सीट्राईऑल",
+                    "wiki": "कैल्सीट्राईऑल"
+                  },
+                  "ar": {
+                    "title": "كالسيتريول",
+                    "wiki": "كالسيتريول"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin D deficiency",
+                    "wiki": "Vitamin D deficiency"
+                  },
+                  "es": {
+                    "title": "Deficiencia de vitamina D",
+                    "wiki": "Deficiencia de vitamina D"
+                  },
+                  "fr": {
+                    "title": "Carence en vitamine D",
+                    "wiki": "Carence en vitamine D"
+                  },
+                  "pt": {
+                    "title": "Deficiência de vitamina D",
+                    "wiki": "Deficiência de vitamina D"
+                  },
+                  "it": {
+                    "title": "Carenza della vitamina D",
+                    "wiki": "Carenza della vitamina D"
+                  },
+                  "de": {
+                    "title": "Vitamin-D-Mangel"
+                  },
+                  "ru": {
+                    "title": "Гиповитаминоз D",
+                    "wiki": "Гиповитаминоз D"
+                  },
+                  "zh": {
+                    "title": "维生素D缺乏症",
+                    "wiki": "维生素D缺乏症"
+                  },
+                  "hi": {
+                    "title": "Vitamin D deficiency"
+                  },
+                  "ar": {
+                    "title": "نقص فيتامين د",
+                    "wiki": "نقص فيتامين د"
+                  }
+                },
+                "noWiki": [
+                  "de",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Rickets",
+                    "wiki": "Rickets"
+                  },
+                  "es": {
+                    "title": "Raquitismo",
+                    "wiki": "Raquitismo"
+                  },
+                  "fr": {
+                    "title": "Rachitisme",
+                    "wiki": "Rachitisme"
+                  },
+                  "pt": {
+                    "title": "Raquitismo",
+                    "wiki": "Raquitismo"
+                  },
+                  "it": {
+                    "title": "Rachitismo",
+                    "wiki": "Rachitismo"
+                  },
+                  "de": {
+                    "title": "Rachitis",
+                    "wiki": "Rachitis"
+                  },
+                  "ru": {
+                    "title": "Рахит",
+                    "wiki": "Рахит"
+                  },
+                  "zh": {
+                    "title": "佝僂病",
+                    "wiki": "佝僂病"
+                  },
+                  "hi": {
+                    "title": "सूखा रोग",
+                    "wiki": "सूखा रोग"
+                  },
+                  "ar": {
+                    "title": "كساح الأطفال",
+                    "wiki": "كساح الأطفال"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Osteomalacia",
+                    "wiki": "Osteomalacia"
+                  },
+                  "es": {
+                    "title": "Osteomalacia",
+                    "wiki": "Osteomalacia"
+                  },
+                  "fr": {
+                    "title": "Ostéomalacie",
+                    "wiki": "Ostéomalacie"
+                  },
+                  "pt": {
+                    "title": "Osteomalacia",
+                    "wiki": "Osteomalacia"
+                  },
+                  "it": {
+                    "title": "Osteomalacia",
+                    "wiki": "Osteomalacia"
+                  },
+                  "de": {
+                    "title": "Osteomalazie",
+                    "wiki": "Osteomalazie"
+                  },
+                  "ru": {
+                    "title": "Остеомаляция",
+                    "wiki": "Остеомаляция"
+                  },
+                  "zh": {
+                    "title": "骨质软化",
+                    "wiki": "骨质软化"
+                  },
+                  "hi": {
+                    "title": "अस्थिमृदुता",
+                    "wiki": "अस्थिमृदुता"
+                  },
+                  "ar": {
+                    "title": "تلين العظام",
+                    "wiki": "تلين العظام"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Vitamin E",
+                "wiki": "Vitamin E"
+              },
+              "es": {
+                "title": "Vitamina E",
+                "wiki": "Vitamina E"
+              },
+              "fr": {
+                "title": "Vitamine E",
+                "wiki": "Vitamine E"
+              },
+              "pt": {
+                "title": "Vitamina E",
+                "wiki": "Vitamina E"
+              },
+              "it": {
+                "title": "Vitamina E"
+              },
+              "de": {
+                "title": "Vitamin E",
+                "wiki": "Vitamin E"
+              },
+              "ru": {
+                "title": "Витамин E",
+                "wiki": "Витамин E"
+              },
+              "zh": {
+                "title": "维生素E",
+                "wiki": "维生素E"
+              },
+              "hi": {
+                "title": "विटामिन ई",
+                "wiki": "विटामिन ई"
+              },
+              "ar": {
+                "title": "فيتامين هـ",
+                "wiki": "فيتامين هـ"
+              }
+            },
+            "noWiki": [
+              "it"
+            ],
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Tocopherol",
+                    "wiki": "Tocopherol"
+                  },
+                  "es": {
+                    "title": "Tocoferol",
+                    "wiki": "Tocoferol"
+                  },
+                  "fr": {
+                    "title": "Tocophérol"
+                  },
+                  "pt": {
+                    "title": "Tocoferol"
+                  },
+                  "it": {
+                    "title": "Tocoferolo",
+                    "wiki": "Tocoferolo"
+                  },
+                  "de": {
+                    "title": "Tocopherole",
+                    "wiki": "Tocopherole"
+                  },
+                  "ru": {
+                    "title": "Токоферолы",
+                    "wiki": "Токоферолы"
+                  },
+                  "zh": {
+                    "title": "生育酚",
+                    "wiki": "生育酚"
+                  },
+                  "hi": {
+                    "title": "टोकोफेरॉल"
+                  },
+                  "ar": {
+                    "title": "توكوفيرول",
+                    "wiki": "توكوفيرول"
+                  }
+                },
+                "noWiki": [
+                  "fr",
+                  "pt",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Α-Tocopherol",
+                    "wiki": "Α-Tocopherol"
+                  },
+                  "es": {
+                    "title": "Alfa-Tocoferol",
+                    "wiki": "Alfa-Tocoferol"
+                  },
+                  "fr": {
+                    "title": "Α-Tocophérol",
+                    "wiki": "Α-Tocophérol"
+                  },
+                  "pt": {
+                    "title": "D-alfa-tocoferol"
+                  },
+                  "it": {
+                    "title": "Alfa-tocoferolo"
+                  },
+                  "de": {
+                    "title": "α-Tocopherol"
+                  },
+                  "ru": {
+                    "title": "α-токоферол"
+                  },
+                  "zh": {
+                    "title": "Α-生育酚"
+                  },
+                  "hi": {
+                    "title": "Alpha-tocopherol"
+                  },
+                  "ar": {
+                    "title": "ألفا توكوفيرول",
+                    "wiki": "ألفا توكوفيرول"
+                  }
+                },
+                "noWiki": [
+                  "pt",
+                  "it",
+                  "de",
+                  "ru",
+                  "zh",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Tocotrienol",
+                    "wiki": "Tocotrienol"
+                  },
+                  "es": {
+                    "title": "Tocotrienol"
+                  },
+                  "fr": {
+                    "title": "Tocotriénol",
+                    "wiki": "Tocotriénol"
+                  },
+                  "pt": {
+                    "title": "Tocotrienol",
+                    "wiki": "Tocotrienol"
+                  },
+                  "it": {
+                    "title": "Tocotrienolo"
+                  },
+                  "de": {
+                    "title": "Tocotrienole",
+                    "wiki": "Tocotrienole"
+                  },
+                  "ru": {
+                    "title": "Токотриенолы",
+                    "wiki": "Токотриенолы"
+                  },
+                  "zh": {
+                    "title": "生育三烯酚"
+                  },
+                  "hi": {
+                    "title": "Tocotrienol"
+                  },
+                  "ar": {
+                    "title": "توكوترينول",
+                    "wiki": "توكوترينول"
+                  }
+                },
+                "noWiki": [
+                  "es",
+                  "it",
+                  "zh",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin E deficiency",
+                    "wiki": "Vitamin E deficiency"
+                  },
+                  "es": {
+                    "title": "Deficiencia de vitamina E",
+                    "wiki": "Deficiencia de vitamina E"
+                  },
+                  "fr": {
+                    "title": "Avitaminose E"
+                  },
+                  "pt": {
+                    "title": "Deficiência de vitamina E",
+                    "wiki": "Deficiência de vitamina E"
+                  },
+                  "it": {
+                    "title": "Vitamin E deficiency"
+                  },
+                  "de": {
+                    "title": "Vitamin E deficiency"
+                  },
+                  "ru": {
+                    "title": "Гиповитаминоз E",
+                    "wiki": "Гиповитаминоз E"
+                  },
+                  "zh": {
+                    "title": "維他命E缺乏症"
+                  },
+                  "hi": {
+                    "title": "Vitamin E deficiency"
+                  },
+                  "ar": {
+                    "title": "نقص فيتامين إي",
+                    "wiki": "نقص فيتامين إي"
+                  }
+                },
+                "noWiki": [
+                  "fr",
+                  "it",
+                  "de",
+                  "zh",
+                  "hi"
+                ]
+              }
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Vitamin K",
+                "wiki": "Vitamin K"
+              },
+              "es": {
+                "title": "Vitamina K",
+                "wiki": "Vitamina K"
+              },
+              "fr": {
+                "title": "Vitamine K",
+                "wiki": "Vitamine K"
+              },
+              "pt": {
+                "title": "Vitamina K",
+                "wiki": "Vitamina K"
+              },
+              "it": {
+                "title": "Vitamina K",
+                "wiki": "Vitamina K"
+              },
+              "de": {
+                "title": "Vitamin K",
+                "wiki": "Vitamin K"
+              },
+              "ru": {
+                "title": "Витамин K",
+                "wiki": "Витамин K"
+              },
+              "zh": {
+                "title": "维生素K",
+                "wiki": "维生素K"
+              },
+              "hi": {
+                "title": "विटामिन के",
+                "wiki": "विटामिन के"
+              },
+              "ar": {
+                "title": "فيتامين ك",
+                "wiki": "فيتامين ك"
+              }
+            },
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Phytomenadione",
+                    "wiki": "Phytomenadione"
+                  },
+                  "es": {
+                    "title": "Filoquinona",
+                    "wiki": "Filoquinona"
+                  },
+                  "fr": {
+                    "title": "Phylloquinone",
+                    "wiki": "Phylloquinone"
+                  },
+                  "pt": {
+                    "title": "Fitomenadiona",
+                    "wiki": "Fitomenadiona"
+                  },
+                  "it": {
+                    "title": "Fitomenadione",
+                    "wiki": "Fitomenadione"
+                  },
+                  "de": {
+                    "title": "Phyllochinon",
+                    "wiki": "Phyllochinon"
+                  },
+                  "ru": {
+                    "title": "Филлохинон",
+                    "wiki": "Филлохинон"
+                  },
+                  "zh": {
+                    "title": "叶绿基甲萘醌",
+                    "wiki": "叶绿基甲萘醌"
+                  },
+                  "hi": {
+                    "title": "(E)-phytonadione"
+                  },
+                  "ar": {
+                    "title": "فايتوميناديون",
+                    "wiki": "فايتوميناديون"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin K2",
+                    "wiki": "Vitamin K2"
+                  },
+                  "es": {
+                    "title": "Menaquinona",
+                    "wiki": "Menaquinona"
+                  },
+                  "fr": {
+                    "title": "Ménaquinone",
+                    "wiki": "Ménaquinone"
+                  },
+                  "pt": {
+                    "title": "Vitamina K2",
+                    "wiki": "Vitamina K2"
+                  },
+                  "it": {
+                    "title": "Menachinone"
+                  },
+                  "de": {
+                    "title": "Menachinon",
+                    "wiki": "Menachinon"
+                  },
+                  "ru": {
+                    "title": "Менахинон",
+                    "wiki": "Менахинон"
+                  },
+                  "zh": {
+                    "title": "多烯甲萘醌",
+                    "wiki": "多烯甲萘醌"
+                  },
+                  "hi": {
+                    "title": "Menaquinone"
+                  },
+                  "ar": {
+                    "title": "فيتامين ك2",
+                    "wiki": "فيتامين ك2"
+                  }
+                },
+                "noWiki": [
+                  "it",
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Menadione",
+                    "wiki": "Menadione"
+                  },
+                  "es": {
+                    "title": "Menadiona",
+                    "wiki": "Menadiona"
+                  },
+                  "fr": {
+                    "title": "Ménadione",
+                    "wiki": "Ménadione"
+                  },
+                  "pt": {
+                    "title": "Menadiona",
+                    "wiki": "Menadiona"
+                  },
+                  "it": {
+                    "title": "Menadione",
+                    "wiki": "Menadione"
+                  },
+                  "de": {
+                    "title": "Menadion",
+                    "wiki": "Menadion"
+                  },
+                  "ru": {
+                    "title": "Менадион",
+                    "wiki": "Менадион"
+                  },
+                  "zh": {
+                    "title": "甲萘醌",
+                    "wiki": "甲萘醌"
+                  },
+                  "hi": {
+                    "title": "Menadione"
+                  },
+                  "ar": {
+                    "title": "ميناديون",
+                    "wiki": "ميناديون"
+                  }
+                },
+                "noWiki": [
+                  "hi"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin K deficiency",
+                    "wiki": "Vitamin K deficiency"
+                  },
+                  "es": {
+                    "title": "Deficiencia de vitamina K",
+                    "wiki": "Deficiencia de vitamina K"
+                  },
+                  "fr": {
+                    "title": "Carence en vitamine K"
+                  },
+                  "pt": {
+                    "title": "Deficiência de vitamina K",
+                    "wiki": "Deficiência de vitamina K"
+                  },
+                  "it": {
+                    "title": "Vitamin K deficiency"
+                  },
+                  "de": {
+                    "title": "Vitamin K deficiency"
+                  },
+                  "ru": {
+                    "title": "Гиповитаминоз K"
+                  },
+                  "zh": {
+                    "title": "維生素K缺乏症"
+                  },
+                  "hi": {
+                    "title": "Vitamin K deficiency"
+                  },
+                  "ar": {
+                    "title": "نقص فيتامين ك",
+                    "wiki": "نقص فيتامين ك"
+                  }
+                },
+                "noWiki": [
+                  "fr",
+                  "it",
+                  "de",
+                  "ru",
+                  "zh",
+                  "hi"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i18n": {
+          "en": {
+            "title": "Water-soluble vitamins"
+          },
+          "es": {
+            "title": "Vitaminas hidrosolubles"
+          },
+          "fr": {
+            "title": "Vitamines hydrosolubles"
+          },
+          "pt": {
+            "title": "Vitaminas hidrossolúveis"
+          },
+          "it": {
+            "title": "Vitamine idrosolubili"
+          },
+          "de": {
+            "title": "Wasserlösliche Vitamine"
+          },
+          "ru": {
+            "title": "Водорастворимые витамины"
+          },
+          "zh": {
+            "title": "水溶性维生素"
+          },
+          "hi": {
+            "title": "पानी में घुलनशील विटामिन"
+          },
+          "ar": {
+            "title": "الفيتامينات الذائبة في الماء"
+          }
+        },
+        "noWiki": [
+          "en",
+          "es",
+          "fr",
+          "pt",
+          "it",
+          "de",
+          "ru",
+          "zh",
+          "hi",
+          "ar"
+        ],
+        "children": [
+          {
+            "i18n": {
+              "en": {
+                "title": "B vitamins",
+                "wiki": "B vitamins"
+              },
+              "es": {
+                "title": "Vitaminas del grupo B",
+                "wiki": "Vitaminas del grupo B"
+              },
+              "fr": {
+                "title": "Vitamine B",
+                "wiki": "Vitamine B"
+              },
+              "pt": {
+                "title": "Complexo B",
+                "wiki": "Complexo B"
+              },
+              "it": {
+                "title": "Vitamina B",
+                "wiki": "Vitamina B"
+              },
+              "de": {
+                "title": "Vitamin B",
+                "wiki": "Vitamin B"
+              },
+              "ru": {
+                "title": "Витамины группы B",
+                "wiki": "Витамины группы B"
+              },
+              "zh": {
+                "title": "维生素B",
+                "wiki": "维生素B"
+              },
+              "hi": {
+                "title": "विटामिन बी समूह",
+                "wiki": "विटामिन बी समूह"
+              },
+              "ar": {
+                "title": "فيتامينات بي",
+                "wiki": "فيتامينات بي"
+              }
+            },
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Thiamine",
+                    "wiki": "Thiamine"
+                  },
+                  "es": {
+                    "title": "Vitamina B1",
+                    "wiki": "Vitamina B1"
+                  },
+                  "fr": {
+                    "title": "Vitamine B1",
+                    "wiki": "Vitamine B1"
+                  },
+                  "pt": {
+                    "title": "Tiamina",
+                    "wiki": "Tiamina"
+                  },
+                  "it": {
+                    "title": "Tiamina",
+                    "wiki": "Tiamina"
+                  },
+                  "de": {
+                    "title": "Thiamin",
+                    "wiki": "Thiamin"
+                  },
+                  "ru": {
+                    "title": "Тиамин",
+                    "wiki": "Тиамин"
+                  },
+                  "zh": {
+                    "title": "硫胺素",
+                    "wiki": "硫胺素"
+                  },
+                  "hi": {
+                    "title": "विटामिन बी१",
+                    "wiki": "विटामिन बी१"
+                  },
+                  "ar": {
+                    "title": "فيتامين ب1",
+                    "wiki": "فيتامين ب1"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Thiamine deficiency",
+                        "wiki": "Thiamine deficiency"
+                      },
+                      "es": {
+                        "title": "Beriberi",
+                        "wiki": "Beriberi"
+                      },
+                      "fr": {
+                        "title": "Béribéri",
+                        "wiki": "Béribéri"
+                      },
+                      "pt": {
+                        "title": "Beribéri",
+                        "wiki": "Beribéri"
+                      },
+                      "it": {
+                        "title": "Beriberi",
+                        "wiki": "Beriberi"
+                      },
+                      "de": {
+                        "title": "Beriberi",
+                        "wiki": "Beriberi"
+                      },
+                      "ru": {
+                        "title": "Бери-бери",
+                        "wiki": "Бери-бери"
+                      },
+                      "zh": {
+                        "title": "脚气病",
+                        "wiki": "脚气病"
+                      },
+                      "hi": {
+                        "title": "बेरीबेरी",
+                        "wiki": "बेरीबेरी"
+                      },
+                      "ar": {
+                        "title": "نقص الثيامين",
+                        "wiki": "نقص الثيامين"
+                      }
+                    }
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Thiamine deficiency"
+                      },
+                      "es": {
+                        "title": "Deficiencia de la tiamina",
+                        "wiki": "Deficiencia de la tiamina"
+                      },
+                      "fr": {
+                        "title": "Carence en thiamine",
+                        "wiki": "Carence en thiamine"
+                      },
+                      "pt": {
+                        "title": "Thiamine deficiency"
+                      },
+                      "it": {
+                        "title": "Thiamine deficiency"
+                      },
+                      "de": {
+                        "title": "Vitamin-B1-Mangel"
+                      },
+                      "ru": {
+                        "title": "Гиповитаминоз B1",
+                        "wiki": "Гиповитаминоз B1"
+                      },
+                      "zh": {
+                        "title": "硫胺缺乏症",
+                        "wiki": "硫胺缺乏症"
+                      },
+                      "hi": {
+                        "title": "Thiamine deficiency"
+                      },
+                      "ar": {
+                        "title": "نقص التيامين"
+                      }
+                    },
+                    "noWiki": [
+                      "en",
+                      "pt",
+                      "it",
+                      "de",
+                      "hi",
+                      "ar"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Wernicke encephalopathy",
+                        "wiki": "Wernicke encephalopathy"
+                      },
+                      "es": {
+                        "title": "Encefalopatía de Wernicke",
+                        "wiki": "Encefalopatía de Wernicke"
+                      },
+                      "fr": {
+                        "title": "Encéphalopathie de Wernicke",
+                        "wiki": "Encéphalopathie de Wernicke"
+                      },
+                      "pt": {
+                        "title": "Encefalopatia de Wernicke",
+                        "wiki": "Encefalopatia de Wernicke"
+                      },
+                      "it": {
+                        "title": "Encefalopatia di Wernicke",
+                        "wiki": "Encefalopatia di Wernicke"
+                      },
+                      "de": {
+                        "title": "Wernicke-Enzephalopathie",
+                        "wiki": "Wernicke-Enzephalopathie"
+                      },
+                      "ru": {
+                        "title": "Энцефалопатия Вернике"
+                      },
+                      "zh": {
+                        "title": "韋尼克腦病變",
+                        "wiki": "韋尼克腦病變"
+                      },
+                      "hi": {
+                        "title": "Wernicke encephalopathy"
+                      },
+                      "ar": {
+                        "title": "اعتلال دماغي فيرنيكي",
+                        "wiki": "اعتلال دماغي فيرنيكي"
+                      }
+                    },
+                    "noWiki": [
+                      "ru",
+                      "hi"
+                    ]
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Riboflavin",
+                    "wiki": "Riboflavin"
+                  },
+                  "es": {
+                    "title": "Vitamina B2",
+                    "wiki": "Vitamina B2"
+                  },
+                  "fr": {
+                    "title": "Riboflavine",
+                    "wiki": "Riboflavine"
+                  },
+                  "pt": {
+                    "title": "Riboflavina",
+                    "wiki": "Riboflavina"
+                  },
+                  "it": {
+                    "title": "Riboflavina",
+                    "wiki": "Riboflavina"
+                  },
+                  "de": {
+                    "title": "Riboflavin",
+                    "wiki": "Riboflavin"
+                  },
+                  "ru": {
+                    "title": "Рибофлавин",
+                    "wiki": "Рибофлавин"
+                  },
+                  "zh": {
+                    "title": "核黄素",
+                    "wiki": "核黄素"
+                  },
+                  "hi": {
+                    "title": "रिबोफ्लेविन",
+                    "wiki": "रिबोफ्लेविन"
+                  },
+                  "ar": {
+                    "title": "فيتامين ب2",
+                    "wiki": "فيتامين ب2"
+                  }
+                }
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Nicotinic acid"
+                  },
+                  "es": {
+                    "title": "Ácidos nicotínicos",
+                    "wiki": "Ácidos nicotínicos"
+                  },
+                  "fr": {
+                    "title": "Nicotinic acid"
+                  },
+                  "pt": {
+                    "title": "Ácidos nicotínicos",
+                    "wiki": "Ácidos nicotínicos"
+                  },
+                  "it": {
+                    "title": "Nicotinic acid"
+                  },
+                  "de": {
+                    "title": "Nicotinic acid"
+                  },
+                  "ru": {
+                    "title": "Nicotinic acid"
+                  },
+                  "zh": {
+                    "title": "Nicotinic acid"
+                  },
+                  "hi": {
+                    "title": "निकोटनिक एसिड"
+                  },
+                  "ar": {
+                    "title": "أحماض النيكوتينيك",
+                    "wiki": "أحماض النيكوتينيك"
+                  }
+                },
+                "noWiki": [
+                  "en",
+                  "fr",
+                  "it",
+                  "de",
+                  "ru",
+                  "zh",
+                  "hi"
+                ],
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Nicotinamide",
+                        "wiki": "Nicotinamide"
+                      },
+                      "es": {
+                        "title": "Nicotinamida",
+                        "wiki": "Nicotinamida"
+                      },
+                      "fr": {
+                        "title": "Nicotinamide",
+                        "wiki": "Nicotinamide"
+                      },
+                      "pt": {
+                        "title": "Nicotinamida",
+                        "wiki": "Nicotinamida"
+                      },
+                      "it": {
+                        "title": "Nicotinamide",
+                        "wiki": "Nicotinamide"
+                      },
+                      "de": {
+                        "title": "Nicotinamid",
+                        "wiki": "Nicotinamid"
+                      },
+                      "ru": {
+                        "title": "Никотинамид",
+                        "wiki": "Никотинамид"
+                      },
+                      "zh": {
+                        "title": "烟酰胺",
+                        "wiki": "烟酰胺"
+                      },
+                      "hi": {
+                        "title": "निकोटिनामाइड",
+                        "wiki": "निकोटिनामाइड"
+                      },
+                      "ar": {
+                        "title": "نيكوتيناميد",
+                        "wiki": "نيكوتيناميد"
+                      }
+                    }
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Nicotinic acid",
+                        "wiki": "Nicotinic acid"
+                      },
+                      "es": {
+                        "title": "Vitamina B3"
+                      },
+                      "fr": {
+                        "title": "Vitamine B3"
+                      },
+                      "pt": {
+                        "title": "Niacina",
+                        "wiki": "Niacina"
+                      },
+                      "it": {
+                        "title": "Niacina",
+                        "wiki": "Niacina"
+                      },
+                      "de": {
+                        "title": "Nicotinsäure",
+                        "wiki": "Nicotinsäure"
+                      },
+                      "ru": {
+                        "title": "Никотиновая кислота",
+                        "wiki": "Никотиновая кислота"
+                      },
+                      "zh": {
+                        "title": "烟酸",
+                        "wiki": "烟酸"
+                      },
+                      "hi": {
+                        "title": "नाइयासिन",
+                        "wiki": "नाइयासिन"
+                      },
+                      "ar": {
+                        "title": "نياسين",
+                        "wiki": "نياسين"
+                      }
+                    },
+                    "noWiki": [
+                      "es",
+                      "fr"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Pellagra",
+                        "wiki": "Pellagra"
+                      },
+                      "es": {
+                        "title": "Pelagra",
+                        "wiki": "Pelagra"
+                      },
+                      "fr": {
+                        "title": "Pellagre",
+                        "wiki": "Pellagre"
+                      },
+                      "pt": {
+                        "title": "Pelagra",
+                        "wiki": "Pelagra"
+                      },
+                      "it": {
+                        "title": "Pellagra",
+                        "wiki": "Pellagra"
+                      },
+                      "de": {
+                        "title": "Pellagra",
+                        "wiki": "Pellagra"
+                      },
+                      "ru": {
+                        "title": "Пеллагра",
+                        "wiki": "Пеллагра"
+                      },
+                      "zh": {
+                        "title": "糙皮病",
+                        "wiki": "糙皮病"
+                      },
+                      "hi": {
+                        "title": "पेलाग्रा",
+                        "wiki": "पेलाग्रा"
+                      },
+                      "ar": {
+                        "title": "بلاغرا",
+                        "wiki": "بلاغرا"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Pantothenic acid",
+                    "wiki": "Pantothenic acid"
+                  },
+                  "es": {
+                    "title": "Vitamina B5",
+                    "wiki": "Vitamina B5"
+                  },
+                  "fr": {
+                    "title": "Vitamine B5",
+                    "wiki": "Vitamine B5"
+                  },
+                  "pt": {
+                    "title": "Ácido pantoténico",
+                    "wiki": "Ácido pantoténico"
+                  },
+                  "it": {
+                    "title": "Acido pantotenico",
+                    "wiki": "Acido pantotenico"
+                  },
+                  "de": {
+                    "title": "Pantothensäure",
+                    "wiki": "Pantothensäure"
+                  },
+                  "ru": {
+                    "title": "Пантотеновая кислота",
+                    "wiki": "Пантотеновая кислота"
+                  },
+                  "zh": {
+                    "title": "泛酸",
+                    "wiki": "泛酸"
+                  },
+                  "hi": {
+                    "title": "पेन्टोथेनिक अम्ल",
+                    "wiki": "पेन्टोथेनिक अम्ल"
+                  },
+                  "ar": {
+                    "title": "فيتامين بي5",
+                    "wiki": "فيتامين بي5"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Coenzyme A",
+                        "wiki": "Coenzyme A"
+                      },
+                      "es": {
+                        "title": "Coenzima A",
+                        "wiki": "Coenzima A"
+                      },
+                      "fr": {
+                        "title": "Coenzyme A",
+                        "wiki": "Coenzyme A"
+                      },
+                      "pt": {
+                        "title": "Coenzima A",
+                        "wiki": "Coenzima A"
+                      },
+                      "it": {
+                        "title": "Coenzima A",
+                        "wiki": "Coenzima A"
+                      },
+                      "de": {
+                        "title": "Coenzym A",
+                        "wiki": "Coenzym A"
+                      },
+                      "ru": {
+                        "title": "Кофермент A",
+                        "wiki": "Кофермент A"
+                      },
+                      "zh": {
+                        "title": "辅酶A",
+                        "wiki": "辅酶A"
+                      },
+                      "hi": {
+                        "title": "Coenzyme A"
+                      },
+                      "ar": {
+                        "title": "مرافق الإنزيم-أ",
+                        "wiki": "مرافق الإنزيم-أ"
+                      }
+                    },
+                    "noWiki": [
+                      "hi"
+                    ]
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin B6",
+                    "wiki": "Vitamin B6"
+                  },
+                  "es": {
+                    "title": "Vitamina B6",
+                    "wiki": "Vitamina B6"
+                  },
+                  "fr": {
+                    "title": "Vitamine B6",
+                    "wiki": "Vitamine B6"
+                  },
+                  "pt": {
+                    "title": "Vitamina B6",
+                    "wiki": "Vitamina B6"
+                  },
+                  "it": {
+                    "title": "Vitamina B6",
+                    "wiki": "Vitamina B6"
+                  },
+                  "de": {
+                    "title": "Vitamin B6",
+                    "wiki": "Vitamin B6"
+                  },
+                  "ru": {
+                    "title": "Витамин B6",
+                    "wiki": "Витамин B6"
+                  },
+                  "zh": {
+                    "title": "维生素B6",
+                    "wiki": "维生素B6"
+                  },
+                  "hi": {
+                    "title": "विटामिन बी६",
+                    "wiki": "विटामिन बी६"
+                  },
+                  "ar": {
+                    "title": "فيتامين ب6",
+                    "wiki": "فيتامين ب6"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Pyridoxine",
+                        "wiki": "Pyridoxine"
+                      },
+                      "es": {
+                        "title": "Piridoxina",
+                        "wiki": "Piridoxina"
+                      },
+                      "fr": {
+                        "title": "Pyridoxine",
+                        "wiki": "Pyridoxine"
+                      },
+                      "pt": {
+                        "title": "Piridoxina",
+                        "wiki": "Piridoxina"
+                      },
+                      "it": {
+                        "title": "Piridossina",
+                        "wiki": "Piridossina"
+                      },
+                      "de": {
+                        "title": "Pyridoxin",
+                        "wiki": "Pyridoxin"
+                      },
+                      "ru": {
+                        "title": "Пиридоксин",
+                        "wiki": "Пиридоксин"
+                      },
+                      "zh": {
+                        "title": "吡哆醇",
+                        "wiki": "吡哆醇"
+                      },
+                      "hi": {
+                        "title": "पाइरिडोक्सिन",
+                        "wiki": "पाइरिडोक्सिन"
+                      },
+                      "ar": {
+                        "title": "بيريدوكسين",
+                        "wiki": "بيريدوكسين"
+                      }
+                    }
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Pyridoxal phosphate",
+                        "wiki": "Pyridoxal phosphate"
+                      },
+                      "es": {
+                        "title": "Piridoxal fosfato",
+                        "wiki": "Piridoxal fosfato"
+                      },
+                      "fr": {
+                        "title": "Phosphate de pyridoxal",
+                        "wiki": "Phosphate de pyridoxal"
+                      },
+                      "pt": {
+                        "title": "Piridoxal fosfato"
+                      },
+                      "it": {
+                        "title": "Piridossalfosfato",
+                        "wiki": "Piridossalfosfato"
+                      },
+                      "de": {
+                        "title": "Pyridoxalphosphat",
+                        "wiki": "Pyridoxalphosphat"
+                      },
+                      "ru": {
+                        "title": "Пиридоксальфосфат"
+                      },
+                      "zh": {
+                        "title": "磷酸吡哆醛",
+                        "wiki": "磷酸吡哆醛"
+                      },
+                      "hi": {
+                        "title": "Pyridoxal phosphate"
+                      },
+                      "ar": {
+                        "title": "فوسفات البيريدوكسال",
+                        "wiki": "فوسفات البيريدوكسال"
+                      }
+                    },
+                    "noWiki": [
+                      "pt",
+                      "ru",
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Vitamin B6 deficiency"
+                      },
+                      "es": {
+                        "title": "Pyridoxine deficiency"
+                      },
+                      "fr": {
+                        "title": "Carence en vitamine B6"
+                      },
+                      "pt": {
+                        "title": "Deficiência de piridoxina",
+                        "wiki": "Deficiência de piridoxina"
+                      },
+                      "it": {
+                        "title": "Pyridoxine deficiency"
+                      },
+                      "de": {
+                        "title": "Vitamin-B6-Mangel",
+                        "wiki": "Vitamin-B6-Mangel"
+                      },
+                      "ru": {
+                        "title": "Pyridoxine deficiency"
+                      },
+                      "zh": {
+                        "title": "Pyridoxine deficiency"
+                      },
+                      "hi": {
+                        "title": "Pyridoxine deficiency"
+                      },
+                      "ar": {
+                        "title": "Pyridoxine deficiency"
+                      }
+                    },
+                    "noWiki": [
+                      "en",
+                      "es",
+                      "fr",
+                      "it",
+                      "ru",
+                      "zh",
+                      "hi",
+                      "ar"
+                    ]
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Biotin",
+                    "wiki": "Biotin"
+                  },
+                  "es": {
+                    "title": "Biotina",
+                    "wiki": "Biotina"
+                  },
+                  "fr": {
+                    "title": "Vitamine B8",
+                    "wiki": "Vitamine B8"
+                  },
+                  "pt": {
+                    "title": "Biotina",
+                    "wiki": "Biotina"
+                  },
+                  "it": {
+                    "title": "Biotina",
+                    "wiki": "Biotina"
+                  },
+                  "de": {
+                    "title": "Biotin",
+                    "wiki": "Biotin"
+                  },
+                  "ru": {
+                    "title": "Биотин",
+                    "wiki": "Биотин"
+                  },
+                  "zh": {
+                    "title": "生物素",
+                    "wiki": "生物素"
+                  },
+                  "hi": {
+                    "title": "बायोटिन",
+                    "wiki": "बायोटिन"
+                  },
+                  "ar": {
+                    "title": "بيوتين",
+                    "wiki": "بيوتين"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Biotin deficiency",
+                        "wiki": "Biotin deficiency"
+                      },
+                      "es": {
+                        "title": "Biotin deficiency"
+                      },
+                      "fr": {
+                        "title": "Déficit en biotine"
+                      },
+                      "pt": {
+                        "title": "Deficiência de biotina",
+                        "wiki": "Deficiência de biotina"
+                      },
+                      "it": {
+                        "title": "Biotin deficiency"
+                      },
+                      "de": {
+                        "title": "Biotin deficiency"
+                      },
+                      "ru": {
+                        "title": "Biotin deficiency"
+                      },
+                      "zh": {
+                        "title": "Biotin deficiency"
+                      },
+                      "hi": {
+                        "title": "Biotin deficiency"
+                      },
+                      "ar": {
+                        "title": "Biotin deficiency"
+                      }
+                    },
+                    "noWiki": [
+                      "es",
+                      "fr",
+                      "it",
+                      "de",
+                      "ru",
+                      "zh",
+                      "hi",
+                      "ar"
+                    ]
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Folate",
+                    "wiki": "Folate"
+                  },
+                  "es": {
+                    "title": "Ácido fólico",
+                    "wiki": "Ácido fólico"
+                  },
+                  "fr": {
+                    "title": "Vitamine B9",
+                    "wiki": "Vitamine B9"
+                  },
+                  "pt": {
+                    "title": "Ácido fólico",
+                    "wiki": "Ácido fólico"
+                  },
+                  "it": {
+                    "title": "Acido folico",
+                    "wiki": "Acido folico"
+                  },
+                  "de": {
+                    "title": "Folsäure",
+                    "wiki": "Folsäure"
+                  },
+                  "ru": {
+                    "title": "Фолиевая кислота",
+                    "wiki": "Фолиевая кислота"
+                  },
+                  "zh": {
+                    "title": "叶酸",
+                    "wiki": "叶酸"
+                  },
+                  "hi": {
+                    "title": "फोलिक अम्ल",
+                    "wiki": "फोलिक अम्ल"
+                  },
+                  "ar": {
+                    "title": "حمض الفوليك",
+                    "wiki": "حمض الفوليك"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Folate deficiency",
+                        "wiki": "Folate deficiency"
+                      },
+                      "es": {
+                        "title": "Folate deficiency"
+                      },
+                      "fr": {
+                        "title": "Carence en vitamine B9"
+                      },
+                      "pt": {
+                        "title": "Deficiência de folato",
+                        "wiki": "Deficiência de folato"
+                      },
+                      "it": {
+                        "title": "Folate deficiency"
+                      },
+                      "de": {
+                        "title": "Folsäuremangel"
+                      },
+                      "ru": {
+                        "title": "Фолатная недостаточность",
+                        "wiki": "Фолатная недостаточность"
+                      },
+                      "zh": {
+                        "title": "葉酸缺乏症",
+                        "wiki": "葉酸缺乏症"
+                      },
+                      "hi": {
+                        "title": "Folate deficiency"
+                      },
+                      "ar": {
+                        "title": "نقص الفولات",
+                        "wiki": "نقص الفولات"
+                      }
+                    },
+                    "noWiki": [
+                      "es",
+                      "fr",
+                      "it",
+                      "de",
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Neural tube defect",
+                        "wiki": "Neural tube defect"
+                      },
+                      "es": {
+                        "title": "Defecto del tubo neural"
+                      },
+                      "fr": {
+                        "title": "Anomalies du tube neural"
+                      },
+                      "pt": {
+                        "title": "Neural tube defect"
+                      },
+                      "it": {
+                        "title": "Neural tube defect"
+                      },
+                      "de": {
+                        "title": "Neuralrohrdefekt",
+                        "wiki": "Neuralrohrdefekt"
+                      },
+                      "ru": {
+                        "title": "Neural tube defect"
+                      },
+                      "zh": {
+                        "title": "神經管發育缺陷"
+                      },
+                      "hi": {
+                        "title": "Neural tube defect"
+                      },
+                      "ar": {
+                        "title": "عيب الأنبوب العصبي",
+                        "wiki": "عيب الأنبوب العصبي"
+                      }
+                    },
+                    "noWiki": [
+                      "es",
+                      "fr",
+                      "pt",
+                      "it",
+                      "ru",
+                      "zh",
+                      "hi"
+                    ]
+                  }
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Vitamin B12",
+                    "wiki": "Vitamin B12"
+                  },
+                  "es": {
+                    "title": "Vitamina B12",
+                    "wiki": "Vitamina B12"
+                  },
+                  "fr": {
+                    "title": "Vitamine B12",
+                    "wiki": "Vitamine B12"
+                  },
+                  "pt": {
+                    "title": "Vitamina B12",
+                    "wiki": "Vitamina B12"
+                  },
+                  "it": {
+                    "title": "Cobalamina",
+                    "wiki": "Cobalamina"
+                  },
+                  "de": {
+                    "title": "Cobalamine",
+                    "wiki": "Cobalamine"
+                  },
+                  "ru": {
+                    "title": "Витамин B12",
+                    "wiki": "Витамин B12"
+                  },
+                  "zh": {
+                    "title": "维生素B12",
+                    "wiki": "维生素B12"
+                  },
+                  "hi": {
+                    "title": "विटामिन बी१२",
+                    "wiki": "विटामिन बी१२"
+                  },
+                  "ar": {
+                    "title": "فيتامين بي 12",
+                    "wiki": "فيتامين بي 12"
+                  }
+                },
+                "children": [
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Cyanocobalamin",
+                        "wiki": "Cyanocobalamin"
+                      },
+                      "es": {
+                        "title": "Cianocobalamina",
+                        "wiki": "Cianocobalamina"
+                      },
+                      "fr": {
+                        "title": "Cyanocobalamine",
+                        "wiki": "Cyanocobalamine"
+                      },
+                      "pt": {
+                        "title": "Cianocobalamina",
+                        "wiki": "Cianocobalamina"
+                      },
+                      "it": {
+                        "title": "Cyanocobalamin"
+                      },
+                      "de": {
+                        "title": "Cyanocobalamin"
+                      },
+                      "ru": {
+                        "title": "Цианокобаламин"
+                      },
+                      "zh": {
+                        "title": "氰鈷胺",
+                        "wiki": "氰鈷胺"
+                      },
+                      "hi": {
+                        "title": "Cyanocobalamin"
+                      },
+                      "ar": {
+                        "title": "سيانوكوبالامين",
+                        "wiki": "سيانوكوبالامين"
+                      }
+                    },
+                    "noWiki": [
+                      "it",
+                      "de",
+                      "ru",
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Hydroxocobalamin",
+                        "wiki": "Hydroxocobalamin"
+                      },
+                      "es": {
+                        "title": "Hidroxocobalamina",
+                        "wiki": "Hidroxocobalamina"
+                      },
+                      "fr": {
+                        "title": "Hydroxocobalamine",
+                        "wiki": "Hydroxocobalamine"
+                      },
+                      "pt": {
+                        "title": "Hidroxocobalamina",
+                        "wiki": "Hidroxocobalamina"
+                      },
+                      "it": {
+                        "title": "Idrossocobalamina",
+                        "wiki": "Idrossocobalamina"
+                      },
+                      "de": {
+                        "title": "Hydroxycobalamin",
+                        "wiki": "Hydroxycobalamin"
+                      },
+                      "ru": {
+                        "title": "Гидроксокобаламин",
+                        "wiki": "Гидроксокобаламин"
+                      },
+                      "zh": {
+                        "title": "羥鈷胺",
+                        "wiki": "羥鈷胺"
+                      },
+                      "hi": {
+                        "title": "Hydroxocobalamin"
+                      },
+                      "ar": {
+                        "title": "هيدروكسوكوبالامين",
+                        "wiki": "هيدروكسوكوبالامين"
+                      }
+                    },
+                    "noWiki": [
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Methylcobalamin",
+                        "wiki": "Methylcobalamin"
+                      },
+                      "es": {
+                        "title": "Metilcobalamina",
+                        "wiki": "Metilcobalamina"
+                      },
+                      "fr": {
+                        "title": "Méthylcobalamine",
+                        "wiki": "Méthylcobalamine"
+                      },
+                      "pt": {
+                        "title": "Metilcobalamina",
+                        "wiki": "Metilcobalamina"
+                      },
+                      "it": {
+                        "title": "Metilcobalamine"
+                      },
+                      "de": {
+                        "title": "Methylcobalamin"
+                      },
+                      "ru": {
+                        "title": "Метилкобаламин",
+                        "wiki": "Метилкобаламин"
+                      },
+                      "zh": {
+                        "title": "甲钴胺",
+                        "wiki": "甲钴胺"
+                      },
+                      "hi": {
+                        "title": "Methylcobalamin"
+                      },
+                      "ar": {
+                        "title": "ميثيل الكوبالامين",
+                        "wiki": "ميثيل الكوبالامين"
+                      }
+                    },
+                    "noWiki": [
+                      "it",
+                      "de",
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Adenosylcobalamin",
+                        "wiki": "Adenosylcobalamin"
+                      },
+                      "es": {
+                        "title": "Cobamamida",
+                        "wiki": "Cobamamida"
+                      },
+                      "fr": {
+                        "title": "Adénosylcobalamine",
+                        "wiki": "Adénosylcobalamine"
+                      },
+                      "pt": {
+                        "title": "Cobamamida",
+                        "wiki": "Cobamamida"
+                      },
+                      "it": {
+                        "title": "Cobamamide",
+                        "wiki": "Cobamamide"
+                      },
+                      "de": {
+                        "title": "Cobamamide"
+                      },
+                      "ru": {
+                        "title": "Кобамамид",
+                        "wiki": "Кобамамид"
+                      },
+                      "zh": {
+                        "title": "腺苷鈷胺素"
+                      },
+                      "hi": {
+                        "title": "Cobamamide"
+                      },
+                      "ar": {
+                        "title": "Cobamamide"
+                      }
+                    },
+                    "noWiki": [
+                      "de",
+                      "zh",
+                      "hi",
+                      "ar"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Vitamin B12 deficiency",
+                        "wiki": "Vitamin B12 deficiency"
+                      },
+                      "es": {
+                        "title": "Deficiencia de vitamina B12",
+                        "wiki": "Deficiencia de vitamina B12"
+                      },
+                      "fr": {
+                        "title": "Carence en vitamine B 12",
+                        "wiki": "Carence en vitamine B 12"
+                      },
+                      "pt": {
+                        "title": "Deficiência de vitamina B12",
+                        "wiki": "Deficiência de vitamina B12"
+                      },
+                      "it": {
+                        "title": "Carenza di vitamina B12",
+                        "wiki": "Carenza di vitamina B12"
+                      },
+                      "de": {
+                        "title": "Vitamin-B12-Mangel",
+                        "wiki": "Vitamin-B12-Mangel"
+                      },
+                      "ru": {
+                        "title": "Дефицит витамина B12"
+                      },
+                      "zh": {
+                        "title": "维生素B12缺乏症",
+                        "wiki": "维生素B12缺乏症"
+                      },
+                      "hi": {
+                        "title": "Vitamin B12 deficiency"
+                      },
+                      "ar": {
+                        "title": "نقص فيتامين بي12",
+                        "wiki": "نقص فيتامين بي12"
+                      }
+                    },
+                    "noWiki": [
+                      "ru",
+                      "hi"
+                    ]
+                  },
+                  {
+                    "i18n": {
+                      "en": {
+                        "title": "Pernicious anemia",
+                        "wiki": "Pernicious anemia"
+                      },
+                      "es": {
+                        "title": "Anemia perniciosa",
+                        "wiki": "Anemia perniciosa"
+                      },
+                      "fr": {
+                        "title": "Anémie pernicieuse",
+                        "wiki": "Anémie pernicieuse"
+                      },
+                      "pt": {
+                        "title": "Anemia por deficiência de vitamina B12",
+                        "wiki": "Anemia por deficiência de vitamina B12"
+                      },
+                      "it": {
+                        "title": "Anemia perniciosa",
+                        "wiki": "Anemia perniciosa"
+                      },
+                      "de": {
+                        "title": "Perniziöse Anämie",
+                        "wiki": "Perniziöse Anämie"
+                      },
+                      "ru": {
+                        "title": "Пернициозная анемия",
+                        "wiki": "Пернициозная анемия"
+                      },
+                      "zh": {
+                        "title": "恶性贫血",
+                        "wiki": "恶性贫血"
+                      },
+                      "hi": {
+                        "title": "Pernicious anemia"
+                      },
+                      "ar": {
+                        "title": "فقر الدم الخبيث",
+                        "wiki": "فقر الدم الخبيث"
+                      }
+                    },
+                    "noWiki": [
+                      "hi"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Vitamin C",
+                "wiki": "Vitamin C"
+              },
+              "es": {
+                "title": "Vitamina C",
+                "wiki": "Vitamina C"
+              },
+              "fr": {
+                "title": "Vitamine C",
+                "wiki": "Vitamine C"
+              },
+              "pt": {
+                "title": "Vitamina C",
+                "wiki": "Vitamina C"
+              },
+              "it": {
+                "title": "Acido ascorbico",
+                "wiki": "Acido ascorbico"
+              },
+              "de": {
+                "title": "Ascorbinsäure",
+                "wiki": "Ascorbinsäure"
+              },
+              "ru": {
+                "title": "Аскорбиновая кислота",
+                "wiki": "Аскорбиновая кислота"
+              },
+              "zh": {
+                "title": "维生素C",
+                "wiki": "维生素C"
+              },
+              "hi": {
+                "title": "विटामिन सी",
+                "wiki": "विटामिन सी"
+              },
+              "ar": {
+                "title": "فيتامين سي",
+                "wiki": "فيتامين سي"
+              }
+            },
+            "children": [
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Dehydroascorbic acid",
+                    "wiki": "Dehydroascorbic acid"
+                  },
+                  "es": {
+                    "title": "Dehydroascorbic acid"
+                  },
+                  "fr": {
+                    "title": "Acide déshydroascorbique",
+                    "wiki": "Acide déshydroascorbique"
+                  },
+                  "pt": {
+                    "title": "Dehydroascorbic acid"
+                  },
+                  "it": {
+                    "title": "Dehydroascorbic acid"
+                  },
+                  "de": {
+                    "title": "Dehydroascorbinsäure",
+                    "wiki": "Dehydroascorbinsäure"
+                  },
+                  "ru": {
+                    "title": "Дегидроаскорбиновая кислота",
+                    "wiki": "Дегидроаскорбиновая кислота"
+                  },
+                  "zh": {
+                    "title": "脫氫抗壞血酸",
+                    "wiki": "脫氫抗壞血酸"
+                  },
+                  "hi": {
+                    "title": "Dehydroascorbic acid"
+                  },
+                  "ar": {
+                    "title": "Dehydroascorbic acid"
+                  }
+                },
+                "noWiki": [
+                  "es",
+                  "pt",
+                  "it",
+                  "hi",
+                  "ar"
+                ]
+              },
+              {
+                "i18n": {
+                  "en": {
+                    "title": "Scurvy",
+                    "wiki": "Scurvy"
+                  },
+                  "es": {
+                    "title": "Escorbuto",
+                    "wiki": "Escorbuto"
+                  },
+                  "fr": {
+                    "title": "Scorbut",
+                    "wiki": "Scorbut"
+                  },
+                  "pt": {
+                    "title": "Escorbuto",
+                    "wiki": "Escorbuto"
+                  },
+                  "it": {
+                    "title": "Scorbuto",
+                    "wiki": "Scorbuto"
+                  },
+                  "de": {
+                    "title": "Skorbut",
+                    "wiki": "Skorbut"
+                  },
+                  "ru": {
+                    "title": "Цинга",
+                    "wiki": "Цинга"
+                  },
+                  "zh": {
+                    "title": "壞血病",
+                    "wiki": "壞血病"
+                  },
+                  "hi": {
+                    "title": "स्कर्वी",
+                    "wiki": "स्कर्वी"
+                  },
+                  "ar": {
+                    "title": "بثع",
+                    "wiki": "بثع"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i18n": {
+          "en": {
+            "title": "Vitamin-like nutrients"
+          },
+          "es": {
+            "title": "Nutrientes afines a las vitaminas"
+          },
+          "fr": {
+            "title": "Nutriments apparentés aux vitamines"
+          },
+          "pt": {
+            "title": "Nutrientes semelhantes a vitaminas"
+          },
+          "it": {
+            "title": "Nutrienti simili alle vitamine"
+          },
+          "de": {
+            "title": "Vitaminähnliche Nährstoffe"
+          },
+          "ru": {
+            "title": "Витаминоподобные вещества"
+          },
+          "zh": {
+            "title": "类维生素营养素"
+          },
+          "hi": {
+            "title": "विटामिन जैसे पोषक तत्व"
+          },
+          "ar": {
+            "title": "مغذيات شبيهة بالفيتامينات"
+          }
+        },
+        "noWiki": [
+          "en",
+          "es",
+          "fr",
+          "pt",
+          "it",
+          "de",
+          "ru",
+          "zh",
+          "hi",
+          "ar"
+        ],
+        "children": [
+          {
+            "i18n": {
+              "en": {
+                "title": "Choline",
+                "wiki": "Choline"
+              },
+              "es": {
+                "title": "Colina",
+                "wiki": "Colina (química)"
+              },
+              "fr": {
+                "title": "Choline",
+                "wiki": "Choline"
+              },
+              "pt": {
+                "title": "Colina",
+                "wiki": "Colina (vitamina)"
+              },
+              "it": {
+                "title": "Colina",
+                "wiki": "Colina"
+              },
+              "de": {
+                "title": "Cholin",
+                "wiki": "Cholin"
+              },
+              "ru": {
+                "title": "Холин",
+                "wiki": "Холин"
+              },
+              "zh": {
+                "title": "胆碱",
+                "wiki": "胆碱"
+              },
+              "hi": {
+                "title": "Choline"
+              },
+              "ar": {
+                "title": "كولين",
+                "wiki": "كولين (مركب كيميائي)"
+              }
+            },
+            "noWiki": [
+              "hi"
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Inositol",
+                "wiki": "Inositol"
+              },
+              "es": {
+                "title": "Inositol",
+                "wiki": "Inositol"
+              },
+              "fr": {
+                "title": "Inositol",
+                "wiki": "Inositol"
+              },
+              "pt": {
+                "title": "Inositol",
+                "wiki": "Inositol"
+              },
+              "it": {
+                "title": "Inositolo",
+                "wiki": "Inositolo"
+              },
+              "de": {
+                "title": "Inosit",
+                "wiki": "Inosit"
+              },
+              "ru": {
+                "title": "Инозитол",
+                "wiki": "Инозитол"
+              },
+              "zh": {
+                "title": "肌醇",
+                "wiki": "肌醇"
+              },
+              "hi": {
+                "title": "इनोसिटॉल",
+                "wiki": "इनोसिटॉल"
+              },
+              "ar": {
+                "title": "إينوزيتول",
+                "wiki": "إينوزيتول"
+              }
+            }
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Carnitine",
+                "wiki": "Carnitine"
+              },
+              "es": {
+                "title": "Carnitina",
+                "wiki": "Carnitina"
+              },
+              "fr": {
+                "title": "Carnitine",
+                "wiki": "Carnitine"
+              },
+              "pt": {
+                "title": "Carnitina",
+                "wiki": "Carnitina"
+              },
+              "it": {
+                "title": "Carnitina",
+                "wiki": "Carnitina"
+              },
+              "de": {
+                "title": "Carnitin",
+                "wiki": "Carnitin"
+              },
+              "ru": {
+                "title": "Левокарнитин",
+                "wiki": "Левокарнитин"
+              },
+              "zh": {
+                "title": "肉碱",
+                "wiki": "肉碱"
+              },
+              "hi": {
+                "title": "Carnitine"
+              },
+              "ar": {
+                "title": "كارنيتين",
+                "wiki": "كارنيتين"
+              }
+            },
+            "noWiki": [
+              "hi"
+            ]
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Coenzyme Q10",
+                "wiki": "Coenzyme Q10"
+              },
+              "es": {
+                "title": "Coenzima Q10",
+                "wiki": "Coenzima Q10"
+              },
+              "fr": {
+                "title": "Coenzyme Q10",
+                "wiki": "Coenzyme Q10"
+              },
+              "pt": {
+                "title": "Ubiquinona",
+                "wiki": "Ubiquinona"
+              },
+              "it": {
+                "title": "Ubidecarenone",
+                "wiki": "Ubidecarenone"
+              },
+              "de": {
+                "title": "Ubichinon-10",
+                "wiki": "Ubichinon-10"
+              },
+              "ru": {
+                "title": "Кофермент Q",
+                "wiki": "Кофермент Q"
+              },
+              "zh": {
+                "title": "辅酶Q10",
+                "wiki": "辅酶Q10"
+              },
+              "hi": {
+                "title": "कोएन्जाइम क्यू-१०",
+                "wiki": "कोएन्जाइम क्यू-१०"
+              },
+              "ar": {
+                "title": "مساعد الإنزيم Q10",
+                "wiki": "مساعد الإنزيم Q10"
+              }
+            }
+          },
+          {
+            "i18n": {
+              "en": {
+                "title": "Lipoic acid",
+                "wiki": "Lipoic acid"
+              },
+              "es": {
+                "title": "Ácido lipoico",
+                "wiki": "Ácido lipoico"
+              },
+              "fr": {
+                "title": "Acide lipoïque",
+                "wiki": "Acide lipoïque"
+              },
+              "pt": {
+                "title": "Ácido lipoico",
+                "wiki": "Ácido lipoico"
+              },
+              "it": {
+                "title": "Acido lipoico",
+                "wiki": "Acido lipoico"
+              },
+              "de": {
+                "title": "Liponsäure",
+                "wiki": "Liponsäure"
+              },
+              "ru": {
+                "title": "Липоевая кислота",
+                "wiki": "Липоевая кислота"
+              },
+              "zh": {
+                "title": "硫辛酸",
+                "wiki": "硫辛酸"
+              },
+              "hi": {
+                "title": "(RS)-thioctic acid"
+              },
+              "ar": {
+                "title": "حمض الليبويك",
+                "wiki": "حمض الليبويك"
+              }
+            },
+            "noWiki": [
+              "hi"
+            ]
+          }
+        ]
+      },
+      {
+        "i18n": {
+          "en": {
+            "title": "Hypervitaminosis",
+            "wiki": "Hypervitaminosis"
+          },
+          "es": {
+            "title": "Hipervitaminosis",
+            "wiki": "Hipervitaminosis"
+          },
+          "fr": {
+            "title": "Hypervitaminose",
+            "wiki": "Hypervitaminose"
+          },
+          "pt": {
+            "title": "Hipervitaminose",
+            "wiki": "Hipervitaminose"
+          },
+          "it": {
+            "title": "Hypervitaminosis"
+          },
+          "de": {
+            "title": "Hypervitaminose",
+            "wiki": "Hypervitaminose"
+          },
+          "ru": {
+            "title": "Гипервитаминоз",
+            "wiki": "Гипервитаминоз"
+          },
+          "zh": {
+            "title": "维生素过多症",
+            "wiki": "维生素过多症"
+          },
+          "hi": {
+            "title": "Hypervitaminosis"
+          },
+          "ar": {
+            "title": "فرط الفيتامين",
+            "wiki": "فرط الفيتامين"
+          }
+        },
+        "noWiki": [
+          "it",
+          "hi"
+        ]
+      },
+      {
+        "i18n": {
+          "en": {
+            "title": "Vitamin deficiency",
+            "wiki": "Vitamin deficiency"
+          },
+          "es": {
+            "title": "Avitaminosis",
+            "wiki": "Avitaminosis"
+          },
+          "fr": {
+            "title": "Avitaminose",
+            "wiki": "Avitaminose"
+          },
+          "pt": {
+            "title": "Avitaminose",
+            "wiki": "Avitaminose"
+          },
+          "it": {
+            "title": "Avitaminosi",
+            "wiki": "Avitaminosi"
+          },
+          "de": {
+            "title": "Avitaminose",
+            "wiki": "Avitaminose"
+          },
+          "ru": {
+            "title": "Авитаминоз",
+            "wiki": "Авитаминоз"
+          },
+          "zh": {
+            "title": "维生素缺乏症",
+            "wiki": "维生素缺乏症"
+          },
+          "hi": {
+            "title": "Vitamin deficiency"
+          },
+          "ar": {
+            "title": "نقص الفيتامين",
+            "wiki": "نقص الفيتامين"
+          }
+        },
+        "noWiki": [
+          "hi"
+        ]
+      }
+    ]
+  }
+}
