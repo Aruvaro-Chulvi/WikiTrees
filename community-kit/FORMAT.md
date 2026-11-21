@@ -23,6 +23,7 @@ No other keys are allowed anywhere: the checker rejects unknown keys.
 | `author` | yes | The name we will credit, as you want it shown (up to 60 characters). |
 | `category` | yes | One of `natlife` (Nature & Life), `human` (Human Body & Health), `geo` (Geography & Society), `education` (Education & Knowledge), `history` (History & Culture), `art` (Art & Entertainment), `food_nutrition` (Food & Nutrition), `misc` (Various & Curious). |
 | `emoji` | no | One emoji for the tree's card (e.g. `"🌋"`). |
+| `license` | no | `CC-BY-4.0` or `CC0-1.0`. Leave it out if you use the form: you choose the licence there and the bot writes it. Required in a pull request. |
 | `i18n` | yes | For **each of the 10 languages**: `{"title": "…", "description": "…"}`. Title up to 80 characters, description up to 300, plain text. |
 
 ## `tree`: the nodes
@@ -79,7 +80,7 @@ No other keys are allowed anywhere: the checker rejects unknown keys.
 ## Optional cover image
 
 A PNG, 64–2048 px on each side (2:1 looks best, e.g. 1024×512, like the official covers), up to 600 KB, that **you made or have the
-right to share** under the WikiTrees licence. Without a cover, WikiTrees and Offlined draw one with the
+right to share** under the licence of your tree. Without a cover, WikiTrees and Offlined draw one with the
 tree's emoji.
 
 ## Checking your file

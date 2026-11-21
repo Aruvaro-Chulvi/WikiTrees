@@ -20,8 +20,8 @@ alguno, usa el [formulario de enlace erróneo](https://github.com/Aruvaro-Chulvi
    asistente te puede ayudar: pégale los errores). Cada nodo necesita un título en los 10 idiomas, y un
    artículo exacto de Wikipedia en cada idioma o ese idioma en `noWiki`.
 3. **Envíalo.** Abre el **[formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml)**
-   (necesitas una cuenta gratuita de GitHub), adjunta el `.json` (y una portada si la tienes) y acepta el
-   [acuerdo para los árboles de la comunidad](CONTRIBUTOR-AGREEMENT.md).
+   (necesitas una cuenta gratuita de GitHub), adjunta el `.json` (y una portada si la tienes) y elige la
+   [licencia](#licencia) de tu árbol.
 4. **Comprobación automática.** Un bot vuelve a comprobar el archivo, también cada enlace contra Wikipedia, y
    te contesta en tu issue. Si hay errores, corrige el archivo y **edita el issue** con el adjunto nuevo: se
    comprueba otra vez. Cuando está bien, el bot abre un pull request con tu árbol.
@@ -29,8 +29,8 @@ alguno, usa el [formulario de enlace erróneo](https://github.com/Aruvaro-Chulvi
    cambios o corregir cosas pequeñas. Cuando lo aprueba y lo fusiona, se publica en unos minutos.
 
 También puedes abrir tú el pull request: añade `community/<tu-usuario-de-github>.<slug>/tree.json` (y, si
-quieres, `cover.png`), con tu usuario en minúsculas y los `-` cambiados por `_`. Marca la casilla del acuerdo
-en la descripción del pull request.
+quieres, `cover.png`), con tu usuario en minúsculas y los `-` cambiados por `_`. Pon la licencia en
+`meta.license` (`CC-BY-4.0` o `CC0-1.0`) y marca las casillas de confirmación en la descripción del pull request.
 
 ## Qué hace bueno a un árbol
 
@@ -44,10 +44,18 @@ en la descripción del pull request.
 
 ## Licencia
 
-Los árboles de la comunidad se publican con [CC BY-NC-SA 4.0](LICENSE), como los oficiales, con tu nombre como
-autor. Al enviar uno concedes además a Offlined el derecho a incluirlo en la aplicación, también con fines
-comerciales: lee el [acuerdo](CONTRIBUTOR-AGREEMENT.md). Las herramientas de `community-kit/` tienen la
-[licencia MIT](community-kit/LICENSE).
+Tu árbol sigue siendo tuyo. Lo publicas, con su portada, con la licencia que elijas en el formulario:
+
+- **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es)** (la predeterminada): cualquiera puede
+  usarlo, compartirlo y adaptarlo, también con fines comerciales, siempre que **te cite** con el nombre de
+  `meta.author`.
+- **[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.es)**: renuncias a tus derechos; cualquiera
+  puede usarlo para lo que quiera, sin condiciones. WikiTrees y Offlined seguirán mostrando tu nombre.
+
+Las dos permiten a WikiTrees publicar tu árbol y a Offlined incluirlo en la aplicación, también si algún día se
+vende; por eso no se ofrece una licencia que prohíba el uso comercial. Es distinto de los 26 árboles oficiales,
+que tienen [CC BY-NC-SA 4.0](LICENSE): no los copies en un árbol de la comunidad. Las herramientas de
+`community-kit/` tienen la [licencia MIT](community-kit/LICENSE).
 
 ## Retirada y problemas
 

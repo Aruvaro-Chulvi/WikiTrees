@@ -120,8 +120,8 @@ Everything is explained in [CONTRIBUTING.md](CONTRIBUTING.md). The official tree
 - **Trees and covers:** [CC BY-NC-SA 4.0](LICENSE) — use, share and adapt them for **non-commercial**
   purposes, crediting the author and sharing your changes under the same license.
 - **Viewer code:** [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md).
-- **Community trees:** CC BY-NC-SA 4.0, by their authors; each author also grants Offlined the right to include
-  them ([contributor agreement](CONTRIBUTOR-AGREEMENT.md)). **Community tools** (`community-kit/`): MIT.
+- **Community trees:** by their authors, each under the licence the author chose:
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). **Community tools** (`community-kit/`): MIT.
 - **Commercial use** is reserved to the author: contact through [offlined.org](https://www.offlined.org).
 
 Please credit it as: *WikiTrees by Álvaro C. Chulvi, a project of Offlined (https://www.offlined.org)*.
@@ -178,8 +178,8 @@ Todo está explicado en [CONTRIBUTING.es.md](CONTRIBUTING.es.md). La comunidad n
 - **Árboles y portadas:** [CC BY-NC-SA 4.0](LICENSE): puedes usarlos, compartirlos y adaptarlos **sin fines
   comerciales**, citando al autor y compartiendo tus cambios con la misma licencia.
 - **Código del visor:** [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md).
-- **Árboles de la comunidad:** CC BY-NC-SA 4.0, de sus autores; cada autor concede además a Offlined el derecho a
-  incluirlos ([acuerdo](CONTRIBUTOR-AGREEMENT.md)). **Herramientas de la comunidad** (`community-kit/`): MIT.
+- **Árboles de la comunidad:** de sus autores, cada uno con la licencia que eligió su autor:
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) o [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.es). **Herramientas de la comunidad** (`community-kit/`): MIT.
 - **El uso comercial** queda reservado al autor: contacta a través de [offlined.org](https://www.offlined.org).
 
 Cítalo así: *WikiTrees, de Álvaro C. Chulvi, un proyecto de Offlined (https://www.offlined.org)*.

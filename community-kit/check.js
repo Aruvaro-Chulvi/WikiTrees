@@ -52,8 +52,9 @@ function newReport(){
 
 function checkMeta(meta, rep){
   if (!isObj(meta)) { rep.err("«meta» is missing or is not an object."); return; }
-  const extra = Object.keys(meta).filter(k => !["slug", "author", "category", "emoji", "i18n"].includes(k));
+  const extra = Object.keys(meta).filter(k => !["slug", "author", "category", "emoji", "license", "i18n"].includes(k));
   if (extra.length) rep.err(`«meta» has unknown keys: ${extra.sort().join(", ")}.`);
+  if ("license" in meta && !["CC-BY-4.0", "CC0-1.0"].includes(meta.license)) rep.err("«meta.license» must be one of: CC-BY-4.0, CC0-1.0 (or be left out: you choose it in the form).");
   if (typeof meta.slug !== "string" || !SLUG_RX.test(meta.slug)) rep.err("«meta.slug» must be 2–40 characters: lowercase letters a–z, digits and «_» (e.g. «volcanoes»).");
   else if (OFFICIAL.has(meta.slug)) rep.err(`«meta.slug» «${meta.slug}» is the name of an official WikiTrees tree: choose another one.`);
   const author = clean(meta.author);

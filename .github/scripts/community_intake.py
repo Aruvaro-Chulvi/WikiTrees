@@ -29,7 +29,8 @@ sys.path.insert(0, str(ROOT / "community-kit"))
 import wikitrees_check as wt  # noqa: E402
 
 MARK = "<!-- wikitrees-community-bot -->"
-AGREEMENT_VERSION = 1
+# Option text of the «Licence» dropdown in the form → licence id
+FORM_LICENSES = {"cc by 4.0": "CC-BY-4.0", "cc0 1.0": "CC0-1.0"}
 ATTACH_RX = re.compile(r"https://github\.com/(?:user-attachments/(?:files|assets)/[\w./%-]+|[\w.-]+/[\w.-]+/files/\d+/[\w.%-]+)")
 UA = {"User-Agent": "WikiTrees-community-intake"}
 
@@ -75,8 +76,12 @@ def main() -> int:
     if not wt.LOGIN_RX.match(login):
         rep.err("Unexpected GitHub user name.")
     # The two boxes of the form must be ticked (the form requires it, but the body can be edited)
-    if len(re.findall(r"^- \[[xX]\] ", find(sec, "agreement"), re.M)) < 2:
-        rep.err("Tick both boxes of the agreement. · Marca las dos casillas del acuerdo.")
+    if len(re.findall(r"^- \[[xX]\] ", find(sec, "confirmation"), re.M)) < 2:
+        rep.err("Tick both boxes of «Confirmation». · Marca las dos casillas de «Confirmación».")
+    lic_text = find(sec, "licence").lower()
+    license_id = next((v for k, v in FORM_LICENSES.items() if lic_text.startswith(k)), "")
+    if not license_id:
+        rep.err("Choose a licence: CC BY 4.0 or CC0 1.0. · Elige una licencia: CC BY 4.0 o CC0 1.0.")
     files = [u for u in ATTACH_RX.findall(find(sec, "tree file")) if not u.lower().endswith((".png", ".jpg", ".jpeg", ".gif"))]
     data = None
     if len(files) != 1:
@@ -123,6 +128,7 @@ def main() -> int:
             pass
 
     if rep.ok and data:
+        data["meta"]["license"] = license_id   # the one chosen in the form wins
         folder = ROOT / "community" / result["folder"]
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "tree.json").write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
@@ -130,8 +136,8 @@ def main() -> int:
             (folder / "cover.png").write_bytes(cover)
         elif (folder / "cover.png").exists() and not curls:
             (folder / "cover.png").unlink()
-        sub = {"github": user, "issue": issue, "date": created, "agreement": AGREEMENT_VERSION,
-               "note": "Sent with the «New community tree» form; the agreement boxes were ticked."}
+        sub = {"github": user, "issue": issue, "date": created, "license": license_id,
+               "note": "Sent with the «New community tree» form; the author chose the licence and ticked both confirmation boxes."}
         (folder / "submission.json").write_text(json.dumps(sub, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
         result["ok"] = True
 
@@ -152,6 +158,8 @@ def main() -> int:
     if stats:
         L.append(f"- **Nodes · Nodos:** {stats['nodes']} · **depth · profundidad:** {stats['depth']}")
         L.append("- **With article · Con artículo:** " + " · ".join(f"{l} {stats['linked'][l]}" for l in wt.LANGS))
+    if license_id:
+        L.append(f"- **Licence · Licencia:** {wt.LICENSES[license_id][0]}")
     L.append(f"- **Cover · Portada:** {'yes · sí' if cover is not None else 'no (drawn with the emoji · se dibuja con el emoji)'}\n")
     if rep.errors:
         L.append(f"### Errors · Errores ({len(rep.errors)})\n")

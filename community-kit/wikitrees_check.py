@@ -38,6 +38,9 @@ OFFICIAL = {"animalia", "plantae", "fungi", "protista", "astronomy_bodies", "din
             "ethnic_groups", "branches_of_knowledge", "periodic_elements", "mathematics", "physics", "chemistry",
             "art_movements_artists", "world_museums", "world_cuisines", "nutrients", "aromatic_plants", "minerals",
             "mythologies", "empires"}
+# Licences a community tree may have (chosen by its author; both allow any use, also commercial)
+LICENSES = {"CC-BY-4.0": ("CC BY 4.0", "https://creativecommons.org/licenses/by/4.0/"),
+            "CC0-1.0": ("CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/")}
 
 MAX_FILE_BYTES = 10 * 1024 * 1024
 MAX_NODES = 5000
@@ -91,9 +94,11 @@ def check_meta(meta, rep: Report) -> None:
     if not isinstance(meta, dict):
         rep.err("«meta» is missing or is not an object.")
         return
-    extra = set(meta) - {"slug", "author", "category", "emoji", "i18n"}
+    extra = set(meta) - {"slug", "author", "category", "emoji", "license", "i18n"}
     if extra:
         rep.err(f"«meta» has unknown keys: {', '.join(sorted(extra))}.")
+    if "license" in meta and meta["license"] not in LICENSES:
+        rep.err(f"«meta.license» must be one of: {', '.join(LICENSES)} (or be left out: you choose it in the form).")
     slug = meta.get("slug")
     if not isinstance(slug, str) or not SLUG_RX.match(slug):
         rep.err("«meta.slug» must be 2–40 characters: lowercase letters a–z, digits and «_» (e.g. «volcanoes»).")
@@ -363,7 +368,7 @@ def build_tree(data: dict, tree_id: str, github: str, fmt: str) -> dict:
         "name": "WikiTrees — community tree", "id": tree_id, "author": clean_text(meta["author"]),
         "github": github, "project": "Offlined", "website": "https://www.offlined.org",
         "repository": "https://github.com/Aruvaro-Chulvi/WikiTrees",
-        "license": "CC BY-NC-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "license": LICENSES[meta["license"]][0], "licenseUrl": LICENSES[meta["license"]][1],
         "copyright": f"© {clean_text(meta['author'])} — a WikiTrees community tree (Offlined)",
         "format": fmt,
     }
@@ -417,6 +422,8 @@ def site(repo: Path, out: Path) -> int:
         rep = Report()
         data = load(f, rep)
         stats = check(data, rep) if data else None
+        if rep.ok and data["meta"].get("license") not in LICENSES:
+            rep.err("«meta.license» is missing (CC-BY-4.0 or CC0-1.0).")
         if not rep.ok or data["meta"]["slug"] != m.group(2):
             print(f"::error::{folder.name}: does not pass the checks, not published: {rep.errors[:3]}")
             bad += 1
@@ -428,7 +435,8 @@ def site(repo: Path, out: Path) -> int:
                  "i18n": {l: {"title": clean_text(data["meta"]["i18n"][l]["title"]),
                               "description": clean_text(data["meta"]["i18n"][l]["description"])} for l in LANGS},
                  "nodes": node_count(stats), "date": sub.get("date") or "", "issue": sub.get("issue"),
-                 "license": "CC BY-NC-SA 4.0", "community": True}
+                 "license": LICENSES[data["meta"]["license"]][0],
+                 "licenseUrl": LICENSES[data["meta"]["license"]][1], "community": True}
         for fmt in ("offlined", "online"):
             dst = cdir / fmt / f"{tree_id}.json"
             dst.write_text(json.dumps(build_tree(data, tree_id, entry["github"], fmt), ensure_ascii=False,
@@ -444,7 +452,7 @@ def site(repo: Path, out: Path) -> int:
     items.sort(key=lambda x: x["i18n"]["en"]["title"].casefold())
     index = {"format": 1, "about": {"name": "WikiTrees — community trees",
                                     "repository": "https://github.com/Aruvaro-Chulvi/WikiTrees",
-                                    "license": "CC BY-NC-SA 4.0",
+                                    "license": "Each tree has its own licence (CC BY 4.0 or CC0 1.0): see «license».",
                                     "note": "Trees made by the community and reviewed by the maintainer before publishing."},
              "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "trees": items,
              "retired": [{"id": x["id"], "reason": str(x.get("reason") or "")[:300]} for x in retired]}

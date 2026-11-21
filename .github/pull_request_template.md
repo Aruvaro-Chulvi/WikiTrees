@@ -9,9 +9,12 @@ One tree per pull request, only inside community/<github-user>.<slug>/. · Un á
 - **Folder · Carpeta:** `community/<github-user>.<slug>/`
 - **What it covers and how it was made · Qué abarca y cómo se hizo:**
 
-## Agreement · Acuerdo
+## Confirmation · Confirmación
 
-- [ ] I have read and accept the [contributor agreement](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md) (version 1). ·
-      He leído y acepto el [acuerdo](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md#español) (versión 1).
+- [ ] I made this tree (myself or with an AI assistant, and I reviewed the result), it does not copy the official
+      WikiTrees trees or anyone else's work, and I publish it, and its cover, under the licence in `meta.license`
+      (`CC-BY-4.0` or `CC0-1.0`). · He hecho este árbol (yo o con un asistente de IA, y he revisado el resultado),
+      no copia los árboles oficiales de WikiTrees ni obra ajena, y lo publico, con su portada, con la licencia de
+      `meta.license` (`CC-BY-4.0` o `CC0-1.0`).
 - [ ] I have read the tree and checked its links; it is suitable for everyone. · He leído el árbol y comprobado
       sus enlaces; es apto para todos.

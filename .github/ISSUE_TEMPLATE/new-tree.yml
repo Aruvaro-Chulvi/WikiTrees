@@ -41,14 +41,27 @@ body:
         Qué abarca, cómo lo hiciste (qué asistente de IA, qué fuentes) y lo que deba saber quien lo revise.
     validations:
       required: true
-  - type: checkboxes
-    id: agreement
+  - type: dropdown
+    id: license
     attributes:
-      label: "Agreement / Acuerdo"
+      label: "Licence / Licencia"
+      description: |
+        Both let anyone (WikiTrees, Offlined and everyone else) use, share and adapt your tree, also commercially. [Which one?](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.md#licence)
+        Las dos permiten a cualquiera (WikiTrees, Offlined y todo el mundo) usar, compartir y adaptar tu árbol, también comercialmente. [¿Cuál elijo?](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.es.md#licencia)
+      options:
+        - "CC BY 4.0 — credit me by name / citando mi nombre"
+        - "CC0 1.0 — public domain, no conditions / dominio público, sin condiciones"
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "Confirmation / Confirmación"
       options:
         - label: |
-            I have read and accept the [contributor agreement](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md) (version 1): the tree is published under CC BY-NC-SA 4.0 with my name, and I grant Offlined the right to include it, also commercially.
-            He leído y acepto el [acuerdo](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTOR-AGREEMENT.md#español) (versión 1): el árbol se publica con CC BY-NC-SA 4.0 y mi nombre, y concedo a Offlined el derecho a incluirlo, también comercialmente.
+            I made this tree (myself or with an AI assistant, and I reviewed the result), it does not copy the official WikiTrees trees or anyone else's work, and I publish it, and its cover, under the licence chosen above.
+            He hecho este árbol (yo o con un asistente de IA, y he revisado el resultado), no copia los árboles oficiales de WikiTrees ni obra ajena, y lo publico, con su portada, con la licencia elegida arriba.
           required: true
         - label: |
             I have read the tree and checked its links; it is suitable for everyone. · He leído el árbol y comprobado sus enlaces; es apto para todos.

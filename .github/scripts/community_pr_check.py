@@ -55,7 +55,7 @@ def main() -> int:
             errors.append(f"`{p}`: this file is written by the maintainer's tools.")
         folders.add((m.group(1), m.group(2)))
     if not maint and len(re.findall(r"^\s*- \[[xX]\] ", body, re.M)) < 2:
-        errors.append("Tick both boxes of the agreement in the pull request description. · Marca las dos casillas del acuerdo.")
+        errors.append("Tick both boxes of «Confirmation» in the pull request description. · Marca las dos casillas de «Confirmación».")
     if not maint and len(folders) > 1:
         errors.append("One tree per pull request, please. · Un árbol por pull request, por favor.")
 
@@ -71,6 +71,8 @@ def main() -> int:
         stats = wt.check(data, rep) if data else None
         if data and isinstance(data.get("meta"), dict) and data["meta"].get("slug") != slug:
             rep.err(f"«meta.slug» must be «{slug}», like the folder.")
+        if data and isinstance(data.get("meta"), dict) and data["meta"].get("license") not in wt.LICENSES:
+            rep.err("«meta.license» is required in a pull request: «CC-BY-4.0» or «CC0-1.0».")
         if stats and rep.ok:
             wt.check_online(stats, rep)
         cov = folder / "cover.png"

@@ -76,7 +76,7 @@ jobs:
             echo "Community tree sent in #$NUMBER by @${{ github.event.issue.user.login }}."
             echo
             echo "- Folder: \`community/$FOLDER/\`"
-            echo "- The contributor ticked the [contributor agreement](https://github.com/$GITHUB_REPOSITORY/blob/main/CONTRIBUTOR-AGREEMENT.md) (version 1) in the issue."
+            echo "- Licence chosen by the contributor: $(jq -r .license "community/$FOLDER/submission.json"); both confirmation boxes ticked in the issue."
             echo "- The bot checked the format and every link against Wikipedia (report in the issue)."
             echo
             echo "**Review by hand before merging:** topic, hierarchy, titles in the 10 languages, links, suitability. Merging publishes it."

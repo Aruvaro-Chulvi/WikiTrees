@@ -9,7 +9,7 @@
 | Trees (structure, titles, links, metadata) | `trees/offlined/`, `trees/online/` | [CC BY-NC-SA 4.0](LICENSE) |
 | Cover images (made by the author) | `trees/images/` | [CC BY-NC-SA 4.0](LICENSE) |
 | Viewer source code | `index.html`, `viewer/` | [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md) |
-| Community trees (each by its author, see `about.author`) | `community/` | [CC BY-NC-SA 4.0](LICENSE) + grant to Offlined ([contributor agreement](CONTRIBUTOR-AGREEMENT.md)) |
+| Community trees (each by its author, see `about.author`) | `community/` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/), as chosen by each author (`meta.license`) |
 | Community tools | `community-kit/*.py`, `community-kit/check.*` | [MIT](community-kit/LICENSE) |
 | Icons | `viewer/icons.js` | [Lucide](https://lucide.dev), ISC License ([text](viewer/LICENSE-lucide.txt)) |
 

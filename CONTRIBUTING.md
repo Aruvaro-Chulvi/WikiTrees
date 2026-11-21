@@ -20,8 +20,8 @@ one of them, use the [wrong link form](https://github.com/Aruvaro-Chulvi/WikiTre
    help: paste the errors back to it). Every node needs a title in the 10 languages, and an exact Wikipedia
    article in each language or that language in `noWiki`.
 3. **Send it.** Open the **[“New community tree” form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml)**
-   (you need a free GitHub account), attach the `.json` file (and a cover image if you have one) and accept
-   the [contributor agreement](CONTRIBUTOR-AGREEMENT.md).
+   (you need a free GitHub account), attach the `.json` file (and a cover image if you have one) and choose
+   the [licence](#licence) of your tree.
 4. **Automatic check.** A bot checks the file again, including every link against Wikipedia, and replies in
    your issue. If there are errors, fix the file and **edit the issue** with the new attachment: it is
    checked again. When it passes, the bot opens a pull request with your tree.
@@ -29,8 +29,8 @@ one of them, use the [wrong link form](https://github.com/Aruvaro-Chulvi/WikiTre
    for changes or correct small things. When it is approved and merged, it is published within minutes.
 
 You can also open a pull request yourself: add `community/<your-github-user>.<slug>/tree.json` (and
-optionally `cover.png`), with your GitHub user in lowercase and `-` replaced by `_`. Tick the agreement box in
-the pull request description.
+optionally `cover.png`), with your GitHub user in lowercase and `-` replaced by `_`. Put the licence in
+`meta.license` (`CC-BY-4.0` or `CC0-1.0`) and tick the confirmation boxes in the pull request description.
 
 ## What makes a good tree
 
@@ -44,10 +44,17 @@ the pull request description.
 
 ## Licence
 
-Community trees are published under [CC BY-NC-SA 4.0](LICENSE), like the official ones, with your name as
-author. By sending one you also grant Offlined the right to include it in the application, also commercially:
-read the [contributor agreement](CONTRIBUTOR-AGREEMENT.md). The tools in `community-kit/` are under the
-[MIT licence](community-kit/LICENSE).
+Your tree stays yours. You publish it, and its cover, under the licence you choose in the form:
+
+- **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)** (the default): anyone may use, share and adapt it,
+  also commercially, as long as they **credit you** by the name in `meta.author`.
+- **[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)**: you give up your rights; anyone may use it
+  for anything, without conditions. WikiTrees and Offlined will still show your name.
+
+Both let WikiTrees publish your tree and let Offlined include it in the application, also if Offlined is sold
+one day; that is why a licence that forbids commercial use is not offered. This is different from the 26 official
+trees, which are under [CC BY-NC-SA 4.0](LICENSE): do not copy them into a community tree. The tools in
+`community-kit/` are under the [MIT licence](community-kit/LICENSE).
 
 ## Withdrawal and problems
 
