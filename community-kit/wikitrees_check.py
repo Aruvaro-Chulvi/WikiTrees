@@ -57,7 +57,7 @@ BAD_CHARS = re.compile(r"[<>{}\[\]|\u0000-\u001f\u007f‎‏‪-‮⁦-⁩]")
 BAD_WIKI = re.compile(r"[#<>\[\]{}|\u0000-\u001f\u007f]")
 NODE_KEYS = {"id", "i18n", "noWiki", "children"}
 I18N_NODE_KEYS = {"title", "wiki", "url"}
-UA = "WikiTrees-community-check/1.0 (https://github.com/Aruvaro-Chulvi/WikiTrees)"
+UA = "WikiTrees-community-check/1.0 (https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees)"
 
 
 class Report:
@@ -367,7 +367,7 @@ def build_tree(data: dict, tree_id: str, github: str, fmt: str) -> dict:
     about = {
         "name": "WikiTrees — community tree", "id": tree_id, "author": clean_text(meta["author"]),
         "github": github, "project": "Offlined", "website": "https://www.offlined.org",
-        "repository": "https://github.com/Aruvaro-Chulvi/WikiTrees",
+        "repository": "https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees",
         "license": LICENSES[meta["license"]][0], "licenseUrl": LICENSES[meta["license"]][1],
         "copyright": f"© {clean_text(meta['author'])} — a WikiTrees community tree (Offlined)",
         "format": fmt,
@@ -451,7 +451,7 @@ def site(repo: Path, out: Path) -> int:
         items.append(entry)
     items.sort(key=lambda x: x["i18n"]["en"]["title"].casefold())
     index = {"format": 1, "about": {"name": "WikiTrees — community trees",
-                                    "repository": "https://github.com/Aruvaro-Chulvi/WikiTrees",
+                                    "repository": "https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees",
                                     "license": "Each tree has its own licence (CC BY 4.0 or CC0 1.0): see «license».",
                                     "note": "Trees made by the community and reviewed by the maintainer before publishing."},
              "updated": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "trees": items,

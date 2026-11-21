@@ -21,7 +21,7 @@ to your computer without internet. This repository publishes the trees so anyone
 
 ### Try it
 
-Open the viewer: **https://aruvaro-chulvi.github.io/WikiTrees/**
+Open the viewer: **https://aruvaro-chulvi.github.io/OfflinedWikiTrees/**
 
 Click a branch to unfold it and see its article summary, hover to see where it sits in the tree, search,
 mark favourites and track your progress (saved in your browser).
@@ -110,8 +110,8 @@ from **Offlined** (WikiTrees → *Community WikiTrees*).
 
 1. Build it with the [prompt for your AI](community-kit/PROMPT.md), following the [format](community-kit/FORMAT.md)
    ([example](community-kit/example/vitamins.json)).
-2. Check it with the [web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
-3. Send it with the [“New community tree” form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml).
+2. Check it with the [web checker](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html).
+3. Send it with the [“New community tree” form](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=new-tree.yml).
 
 Everything is explained in [CONTRIBUTING.md](CONTRIBUTING.md). The official trees are not edited by the community.
 
@@ -141,7 +141,7 @@ a tu ordenador sin internet. Este repositorio publica los árboles para que cual
 
 ### Pruébalo
 
-Abre el visor: **https://aruvaro-chulvi.github.io/WikiTrees/**
+Abre el visor: **https://aruvaro-chulvi.github.io/OfflinedWikiTrees/**
 
 Haz clic en una rama para desplegarla y ver el resumen de su artículo, pasa el ratón para ver dónde está
 en el árbol, busca, marca favoritos y sigue tu progreso (se guarda en tu navegador).
@@ -168,8 +168,8 @@ revisa cada árbol a mano; los aprobados aparecen en el visor en **🤝 Comunida
 
 1. Hazlo con el [prompt para tu IA](community-kit/PROMPT.md), siguiendo el [formato](community-kit/FORMAT.md)
    ([ejemplo](community-kit/example/vitamins.json)).
-2. Compruébalo con el [comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
-3. Envíalo con el [formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml).
+2. Compruébalo con el [comprobador web](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html).
+3. Envíalo con el [formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=new-tree.yml).
 
 Todo está explicado en [CONTRIBUTING.es.md](CONTRIBUTING.es.md). La comunidad no modifica los árboles oficiales.
 

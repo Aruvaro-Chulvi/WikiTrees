@@ -3,11 +3,11 @@
 *[English](CONTRIBUTING.md)*
 
 Cualquiera puede proponer un árbol nuevo para WikiTrees. Si el responsable lo aprueba, se publica como
-**árbol de la comunidad**: aparece en el [visor web](https://aruvaro-chulvi.github.io/WikiTrees/) y cualquiera
+**árbol de la comunidad**: aparece en el [visor web](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/) y cualquiera
 puede descargarlo desde **Offlined** (WikiÁrboles → *WikiÁrboles de la comunidad*).
 
 Los 26 árboles oficiales son parte de Offlined y la comunidad no los modifica. Si encuentras un enlace mal en
-alguno, usa el [formulario de enlace erróneo](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=wrong-link.yml).
+alguno, usa el [formulario de enlace erróneo](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=wrong-link.yml).
 
 ## Cómo funciona
 
@@ -15,11 +15,11 @@ alguno, usa el [formulario de enlace erróneo](https://github.com/Aruvaro-Chulvi
    (Claude, por ejemplo), rellena el tema, el tamaño y tu nombre, y dale [FORMAT.md](community-kit/FORMAT.md)
    y el [ejemplo](community-kit/example/vitamins.json). Obtendrás un archivo `.json`.
    No hace falta saber programar, pero **el resultado es responsabilidad tuya**: léelo.
-2. **Compruébalo.** Abre el **[comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html)**,
+2. **Compruébalo.** Abre el **[comprobador web](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html)**,
    suelta tu archivo, pulsa *Comprobar los enlaces* y mira la vista previa. Corrige lo que te diga (tu
    asistente te puede ayudar: pégale los errores). Cada nodo necesita un título en los 10 idiomas, y un
    artículo exacto de Wikipedia en cada idioma o ese idioma en `noWiki`.
-3. **Envíalo.** Abre el **[formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml)**
+3. **Envíalo.** Abre el **[formulario «Nuevo árbol de la comunidad»](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=new-tree.yml)**
    (necesitas una cuenta gratuita de GitHub), adjunta el `.json` (y una portada si la tienes) y elige la
    [licencia](#licencia) de tu árbol.
 4. **Comprobación automática.** Un bot vuelve a comprobar el archivo, también cada enlace contra Wikipedia, y
@@ -60,6 +60,6 @@ que tienen [CC BY-NC-SA 4.0](LICENSE): no los copies en un árbol de la comunida
 ## Retirada y problemas
 
 Para avisar de un problema con un árbol de la comunidad publicado, usa el
-[formulario de problemas](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=community-report.yml).
+[formulario de problemas](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=community-report.yml).
 El responsable puede retirar un árbol borrando su carpeta o poniéndolo en `community/retired.json`; Offlined
 deja entonces de ofrecerlo.

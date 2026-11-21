@@ -17,7 +17,7 @@ TOPIC: <what the tree is about, e.g. "the volcanoes of the world, by type and re
 SIZE: <roughly how many nodes, e.g. "about 300" (minimum 20 with articles, maximum 5,000)>
 MY NAME (to credit): <your name as you want it shown>
 
-You are helping me build a "community tree" for WikiTrees (https://github.com/Aruvaro-Chulvi/WikiTrees),
+You are helping me build a "community tree" for WikiTrees (https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees),
 a project of Offlined. A tree organises a topic into branches and leaves, and every node links to its exact
 Wikipedia article in 10 languages: en, es, fr, pt, it, de, ru, zh, hi, ar.
 
@@ -54,7 +54,7 @@ TEMA: <de qué trata el árbol, p. ej. "los volcanes del mundo, por tipo y regi�
 TAMAÑO: <cuántos nodos más o menos, p. ej. "unos 300" (mínimo 20 con artículo, máximo 5.000)>
 MI NOMBRE (para el crédito): <tu nombre tal como quieres que aparezca>
 
-Me vas a ayudar a hacer un "árbol de la comunidad" para WikiTrees (https://github.com/Aruvaro-Chulvi/WikiTrees),
+Me vas a ayudar a hacer un "árbol de la comunidad" para WikiTrees (https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees),
 un proyecto de Offlined. Un árbol organiza un tema en ramas y hojas, y cada nodo enlaza con su artículo
 exacto de Wikipedia en 10 idiomas: en, es, fr, pt, it, de, ru, zh, hi, ar.
 

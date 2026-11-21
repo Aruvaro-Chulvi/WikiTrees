@@ -7,11 +7,11 @@
 const LANGS = ["en", "es", "fr", "pt", "it", "de", "ru", "zh", "hi", "ar"];
 const DATA_DIR = "trees/online/";
 const IMG_DIR = "trees/images/";
-const UA = "WikiTrees viewer (https://github.com/Aruvaro-Chulvi/WikiTrees)";
+const UA = "WikiTrees viewer (https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees)";
 // Árboles de la comunidad: los publica .github/workflows/pages.yml desde community/
 const COM_DIR = "trees/community/";
 const COM_CAT = "__community";
-const REPO_URL = "https://github.com/Aruvaro-Chulvi/WikiTrees";
+const REPO_URL = "https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees";
 const PREVIEW_ID = "preview";            // vista previa del comprobador (community-kit/check.html)
 const PREVIEW_KEY = "wikitrees:preview";
 

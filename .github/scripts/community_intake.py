@@ -171,8 +171,8 @@ def main() -> int:
         L.append(f"<details><summary>Notes · Notas ({len(rep.warnings)})</summary>\n")
         L += [f"- {w}" for w in rep.warnings[:150]]
         L.append("\n</details>\n")
-    L.append("<sub>[Format](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/community-kit/FORMAT.md) · "
-             "[Web checker · Comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html)</sub>")
+    L.append("<sub>[Format](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/blob/main/community-kit/FORMAT.md) · "
+             "[Web checker · Comprobador web](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html)</sub>")
     (out / "report.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     (out / "result.json").write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(result, ensure_ascii=False))

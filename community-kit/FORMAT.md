@@ -85,7 +85,7 @@ tree's emoji.
 
 ## Checking your file
 
-- In the browser: open the **[web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html)**,
+- In the browser: open the **[web checker](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html)**,
   drop your file, check the links and preview the tree.
 - With Python 3.9+ (no extra packages): `python community-kit/wikitrees_check.py check my_tree.json --online`
 

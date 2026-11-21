@@ -3,11 +3,11 @@
 *[Español](CONTRIBUTING.es.md)*
 
 Anyone can propose a new tree for WikiTrees. If the maintainer approves it, it is published as a
-**community tree**: it appears in the [web viewer](https://aruvaro-chulvi.github.io/WikiTrees/) and anyone
+**community tree**: it appears in the [web viewer](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/) and anyone
 can download it from **Offlined** (WikiTrees → *Community WikiTrees*).
 
 The 26 official trees are part of Offlined and are not edited by the community. If you find a wrong link in
-one of them, use the [wrong link form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=wrong-link.yml).
+one of them, use the [wrong link form](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=wrong-link.yml).
 
 ## How it works
 
@@ -15,11 +15,11 @@ one of them, use the [wrong link form](https://github.com/Aruvaro-Chulvi/WikiTre
    (Claude, for example), fill in the topic, the size and your name, and give it [FORMAT.md](community-kit/FORMAT.md)
    and the [example](community-kit/example/vitamins.json). You will get one `.json` file.
    You do not need to know how to program, but **you are responsible for the result**: read it.
-2. **Check it.** Open the **[web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html)**,
+2. **Check it.** Open the **[web checker](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html)**,
    drop your file, press *Check the links* and look at the preview. Fix what it reports (your assistant can
    help: paste the errors back to it). Every node needs a title in the 10 languages, and an exact Wikipedia
    article in each language or that language in `noWiki`.
-3. **Send it.** Open the **[“New community tree” form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=new-tree.yml)**
+3. **Send it.** Open the **[“New community tree” form](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=new-tree.yml)**
    (you need a free GitHub account), attach the `.json` file (and a cover image if you have one) and choose
    the [licence](#licence) of your tree.
 4. **Automatic check.** A bot checks the file again, including every link against Wikipedia, and replies in
@@ -59,6 +59,6 @@ trees, which are under [CC BY-NC-SA 4.0](LICENSE): do not copy them into a commu
 ## Withdrawal and problems
 
 To report a problem with a published community tree, use the
-[community tree problem form](https://github.com/Aruvaro-Chulvi/WikiTrees/issues/new?template=community-report.yml).
+[community tree problem form](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/issues/new?template=community-report.yml).
 The maintainer can withdraw a tree by deleting its folder or listing it in `community/retired.json`;
 Offlined then stops offering it.

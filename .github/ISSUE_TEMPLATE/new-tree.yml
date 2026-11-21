@@ -6,12 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Before sending:** read [CONTRIBUTING.md](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.md)
-        and check your file with the [web checker](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+        **Before sending:** read [CONTRIBUTING.md](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/blob/main/CONTRIBUTING.md)
+        and check your file with the [web checker](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html).
         A bot will check it again and reply here; if it finds errors, fix the file and **edit this issue** with the new attachment.
 
-        **Antes de enviarlo:** lee [CONTRIBUTING.es.md](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.es.md)
-        y comprueba tu archivo con el [comprobador web](https://aruvaro-chulvi.github.io/WikiTrees/community-kit/check.html).
+        **Antes de enviarlo:** lee [CONTRIBUTING.es.md](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/blob/main/CONTRIBUTING.es.md)
+        y comprueba tu archivo con el [comprobador web](https://aruvaro-chulvi.github.io/OfflinedWikiTrees/community-kit/check.html).
         Un bot lo volverá a comprobar y te contestará aquí; si encuentra errores, corrige el archivo y **edita este issue** con el adjunto nuevo.
   - type: textarea
     id: file
@@ -46,8 +46,8 @@ body:
     attributes:
       label: "Licence / Licencia"
       description: |
-        Both let anyone (WikiTrees, Offlined and everyone else) use, share and adapt your tree, also commercially. [Which one?](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.md#licence)
-        Las dos permiten a cualquiera (WikiTrees, Offlined y todo el mundo) usar, compartir y adaptar tu árbol, también comercialmente. [¿Cuál elijo?](https://github.com/Aruvaro-Chulvi/WikiTrees/blob/main/CONTRIBUTING.es.md#licencia)
+        Both let anyone (WikiTrees, Offlined and everyone else) use, share and adapt your tree, also commercially. [Which one?](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/blob/main/CONTRIBUTING.md#licence)
+        Las dos permiten a cualquiera (WikiTrees, Offlined y todo el mundo) usar, compartir y adaptar tu árbol, también comercialmente. [¿Cuál elijo?](https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees/blob/main/CONTRIBUTING.es.md#licencia)
       options:
         - "CC BY 4.0 — credit me by name / citando mi nombre"
         - "CC0 1.0 — public domain, no conditions / dominio público, sin condiciones"

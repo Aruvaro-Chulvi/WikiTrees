@@ -254,7 +254,7 @@ function openPreview(){
   drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("is-over"); if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]); });
   $("ckOnline").addEventListener("click", runOnline);
   $("ckPreview").addEventListener("click", openPreview);
-  const repo = "https://github.com/Aruvaro-Chulvi/WikiTrees";
+  const repo = "https://github.com/Aruvaro-Chulvi/OfflinedWikiTrees";
   $("ckSend").href = `${repo}/issues/new?template=new-tree.yml`;
   $("ckHowto").href = `${repo}/blob/main/CONTRIBUTING${lang === "es" ? ".es" : ""}.md`;
   $("ckFormat").href = `${repo}/blob/main/community-kit/FORMAT.md`;
